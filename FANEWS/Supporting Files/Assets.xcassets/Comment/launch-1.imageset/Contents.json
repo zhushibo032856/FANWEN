@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "WeChata1070f256f986a9f621d26cb6c11c568.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "WeChata1070f256f986a9f621d26cb6c11c568-1.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "WeChata1070f256f986a9f621d26cb6c11c568-2.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
