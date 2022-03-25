@@ -129,6 +129,7 @@
         //TODO:处理远程推送内容
         NSLog(@"%@", userInfo);
     }
+    
     completionHandler(UNNotificationPresentationOptionSound|UNNotificationPresentationOptionBadge|UNNotificationPresentationOptionAlert);
 }
 
