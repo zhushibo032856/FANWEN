@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		760ABB1127F18DA8005A461F /* ZZAIImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 760ABB1027F18DA8005A461F /* ZZAIImageCell.m */; };
+		760ABB1427F18DE7005A461F /* ZZAINormalCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 760ABB1327F18DE7005A461F /* ZZAINormalCell.m */; };
 		762AC5AE27E1BE8700380DF5 /* ZZLogoutPopVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 762AC5AC27E1BE8700380DF5 /* ZZLogoutPopVC.m */; };
 		762AC5AF27E1BE8700380DF5 /* ZZLogoutPopVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 762AC5AD27E1BE8700380DF5 /* ZZLogoutPopVC.xib */; };
 		762AC5B327E2D21B00380DF5 /* ZZPageControlBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 762AC5B227E2D21B00380DF5 /* ZZPageControlBaseView.m */; };
@@ -99,6 +101,10 @@
 
 /* Begin PBXFileReference section */
 		3FD2FD6643B6DE322228D7ED /* Pods-FANEWS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FANEWS.debug.xcconfig"; path = "Target Support Files/Pods-FANEWS/Pods-FANEWS.debug.xcconfig"; sourceTree = "<group>"; };
+		760ABB0F27F18DA8005A461F /* ZZAIImageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZAIImageCell.h; sourceTree = "<group>"; };
+		760ABB1027F18DA8005A461F /* ZZAIImageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZAIImageCell.m; sourceTree = "<group>"; };
+		760ABB1227F18DE7005A461F /* ZZAINormalCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZAINormalCell.h; sourceTree = "<group>"; };
+		760ABB1327F18DE7005A461F /* ZZAINormalCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZAINormalCell.m; sourceTree = "<group>"; };
 		762AC5AB27E1BE8700380DF5 /* ZZLogoutPopVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZLogoutPopVC.h; sourceTree = "<group>"; };
 		762AC5AC27E1BE8700380DF5 /* ZZLogoutPopVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZLogoutPopVC.m; sourceTree = "<group>"; };
 		762AC5AD27E1BE8700380DF5 /* ZZLogoutPopVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZZLogoutPopVC.xib; sourceTree = "<group>"; };
@@ -681,6 +687,10 @@
 		769BE58427E073930015CB21 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				760ABB0F27F18DA8005A461F /* ZZAIImageCell.h */,
+				760ABB1027F18DA8005A461F /* ZZAIImageCell.m */,
+				760ABB1227F18DE7005A461F /* ZZAINormalCell.h */,
+				760ABB1327F18DE7005A461F /* ZZAINormalCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1014,6 +1024,7 @@
 				769BE55427E040710015CB21 /* UIView+Ext.m in Sources */,
 				767E780827EC0C0400665E60 /* ZZPageButtonSelectBaseView.m in Sources */,
 				769BE5C027E18DAD0015CB21 /* ZZMineCell.m in Sources */,
+				760ABB1427F18DE7005A461F /* ZZAINormalCell.m in Sources */,
 				767E780B27EC1A3B00665E60 /* ZZThematicNormalCell.m in Sources */,
 				769BE54727E03F150015CB21 /* WebViewJavascriptBridgeBase.m in Sources */,
 				7675684227EC72F50024BF7F /* ZZAISearchResultVC.m in Sources */,
@@ -1022,6 +1033,7 @@
 				762AC5AE27E1BE8700380DF5 /* ZZLogoutPopVC.m in Sources */,
 				769BE57027E070EE0015CB21 /* ZZApiManager.m in Sources */,
 				769BE5A227E07DC30015CB21 /* ZZIntelligentRetrievalVC.m in Sources */,
+				760ABB1127F18DA8005A461F /* ZZAIImageCell.m in Sources */,
 				76CBC3AC27E3266E00A1FAF1 /* ZZActivitiesRewardVC.m in Sources */,
 				76CBC3A927E3265100A1FAF1 /* ZZSystomInfoVC.m in Sources */,
 				767E77EC27E842EF00665E60 /* ZZTextModel.m in Sources */,
