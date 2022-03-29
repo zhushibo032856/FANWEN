@@ -31,7 +31,14 @@ NS_ASSUME_NONNULL_BEGIN
  校验密码格式，同时包含大小写字母数字和特殊符号，最小长度
  */
 + (BOOL)checkPassWordWith:(NSString *)passWord;
-
+/**
+ 改变字符串里面包含的所有相同字符串的的颜色和字号
+ @param font 大小
+ @param color 颜色
+ @param totalString 整个字符串
+ @param subArray 需要改变字符串的数组
+*/
++ (NSMutableAttributedString *)changeFontAndColor:(UIFont *)font Color:(UIColor *)color TotalString:(NSString *)totalString SubStringArray:(NSArray *)subArray;
 @end
 
 NS_ASSUME_NONNULL_END

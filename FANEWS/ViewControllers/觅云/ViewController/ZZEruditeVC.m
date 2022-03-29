@@ -65,7 +65,6 @@
         NSLog(@"yes");
     }else{
         NSLog(@"no");
-        [MBProgressHUD showError:@""];
     }
 }
 
