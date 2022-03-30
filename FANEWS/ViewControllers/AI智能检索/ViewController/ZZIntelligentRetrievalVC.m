@@ -37,7 +37,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.leftBarButtonItem = nil;
-    
+    self.view.backgroundColor = [UIColor whiteColor];
     [self creatUI];
 }
 //创建背景视图

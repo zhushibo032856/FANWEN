@@ -29,6 +29,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.leftBarButtonItem = nil;
+    self.view.backgroundColor = [UIColor whiteColor];
     [self setRightBt];
     
     [self.view addSubview:self.myTableView];

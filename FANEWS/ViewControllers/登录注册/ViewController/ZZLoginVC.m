@@ -9,6 +9,7 @@
 #import "ZZLoginVC.h"
 #import "ZZPhoneLoginVC.h"
 #import "ZZUserProtocolPrivacyPolicyVC.h"
+#import "ZZKeyToLoginVC.h"
 
 @interface ZZLoginVC ()<UITextViewDelegate,UITextFieldDelegate>
 
@@ -17,6 +18,9 @@
 @property (weak, nonatomic) IBOutlet UITextField *passWordTF;
 @property (weak, nonatomic) IBOutlet UIButton *loginBT;
 @property (weak, nonatomic) IBOutlet UITextView *agreeTextView;
+@property (weak, nonatomic) IBOutlet UIButton *backBT;
+@property (weak, nonatomic) IBOutlet UILabel *messageLabel;
+@property (weak, nonatomic) IBOutlet UIButton *protocolBT;
 
 @end
 
@@ -25,11 +29,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.pushType = isPush;
+
     // Do any additional setup after loading the view from its nib.
     [self initContentView];
 }
 - (void)initContentView{
-    
+    if (self.type == 1) {
+        NSLog(@"1111");
+        [self.backBT setHidden:NO];
+    }else{
+        NSLog(@"0000");
+        [self.backBT setHidden:YES];
+    }
+    self.messageLabel.text = @"初始账号\n首次登录\n设置密码\n登录后计费";
     self.loginBT.layer.cornerRadius = 22.5;
     self.agreeTextView.delegate = self;
     self.agreeTextView.attributedText = [self getContentLabelAttributedText:@"登录即代表同意《用户协议》和《隐私政策》"];
@@ -87,8 +99,10 @@
 //登录
 - (IBAction)loginBtAction:(UIButton *)sender {
     
-    [self dismissViewControllerAnimated:YES completion:nil];
-    
+    ZZBaseTabBarController *tabbarVC = [ZZBaseTabBarController new];
+    tabbarVC.selectedIndex = 2;
+    tabbarVC.modalPresentationStyle = UIModalPresentationFullScreen;
+    [self presentViewController:tabbarVC animated:YES completion:nil];
 }
 //忘记密码
 - (IBAction)forgetPasswordBtAction:(UIButton *)sender {
@@ -103,7 +117,7 @@
 }
 //手机登录
 - (IBAction)phoneLoginBtAction:(UIButton *)sender {
-    ZZPhoneLoginVC *vc = [ZZPhoneLoginVC new];
+    ZZKeyToLoginVC *vc = [ZZKeyToLoginVC new];
     
     vc.modalPresentationStyle = UIModalPresentationFullScreen;
     [self presentViewController:vc animated:YES completion:nil];
@@ -113,11 +127,7 @@
     sender.selected = !sender.isSelected;
 }
 - (IBAction)backBtAction:(UIButton *)sender {
-    if (self.type == 2) {
-        [[AppDelegate mainAppDelegate] showTabbarView];
-    }else{
-        [self dismissViewControllerAnimated:YES completion:nil];
-    }
+    [self dismissViewControllerAnimated:YES completion:nil];
     
 }
 

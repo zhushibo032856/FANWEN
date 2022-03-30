@@ -1,0 +1,6 @@
+module Pods_FANEWS {
+  umbrella header "Pods-FANEWS-umbrella.h"
+
+  export *
+  module * { export * }
+}

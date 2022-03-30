@@ -6,7 +6,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "ZZWelcomeVC.h"
 
 @interface AppDelegate ()<UNUserNotificationCenterDelegate,WXApiDelegate>
 
@@ -64,13 +64,35 @@
  初始化根视图
  */
 - (void)initRootView{
-    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    self.window.backgroundColor = [UIColor whiteColor];
+    if (![[NSUserDefaults standardUserDefaults] boolForKey:@"everLaunched"]) {
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"everLaunched"];
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"firstLaunch"];
+    }else{
+        [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"firstLaunch"];
+    }
+    //如果是第一次启动
+    if([[NSUserDefaults standardUserDefaults] boolForKey:@"firstLaunch"])
+    {
+
+        //自己创建的引导页控制器
+        
+        self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+        self.window.backgroundColor = [UIColor whiteColor];
+        ZZWelcomeVC *vc = [ZZWelcomeVC new];
+        self.window.rootViewController = vc;
+        [self.window makeKeyAndVisible];
+        //滑到最后一页的回调
+        vc.callBack = ^{
+            //APP首页控制器
+            ZZBaseTabBarController *tabVC = [ZZBaseTabBarController new];
+            tabVC.selectedIndex = 2;
+            self.window.rootViewController = tabVC;
+            [self.window makeKeyAndVisible];
+        };
+    }else{
+        [self showLoginView];
+    }
     
-    ZZBaseTabBarController *vc = [ZZBaseTabBarController new];
-    vc.selectedIndex = 2;
-    self.window.rootViewController = vc;
-    [self.window makeKeyAndVisible];
 }
 
 /**
@@ -78,8 +100,8 @@
  */
 
 - (void)initFpsBT{
-    OttoFPSButton *btn = [OttoFPSButton setTouchWithFrame:CGRectMake(0, kNavHeight - 30, 80, 30) titleFont:[UIFont systemFontOfSize:14] backgroundColor:kColor(140, 140, 140) backgroundImage:[UIImage imageNamed:@""]];
-    [self.window addSubview:btn];
+    OttoFPSButton *btn = [OttoFPSButton setTouchWithFrame:CGRectMake(kScreenWidth - 80, kNavHeight - 30, 80, 30) titleFont:[UIFont systemFontOfSize:14] backgroundColor:kColor(140, 140, 140) backgroundImage:[UIImage imageNamed:@""]];
+  //  [self.window addSubview:btn];
 }
 
 
@@ -91,7 +113,6 @@
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     ZZLoginVC *loginVC = [[ZZLoginVC alloc]init];
     loginVC.view.backgroundColor = [UIColor whiteColor];
-    loginVC.type = 2;
     self.window.rootViewController = loginVC;
     [self.window makeKeyAndVisible];
     

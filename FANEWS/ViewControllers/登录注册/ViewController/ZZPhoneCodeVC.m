@@ -7,6 +7,7 @@
 //
 
 #import "ZZPhoneCodeVC.h"
+#import "ZZFirstSettingPasseordVC.h"
 
 @interface ZZPhoneCodeVC ()<UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *messageLabel;
@@ -89,8 +90,10 @@
     
 }
 - (IBAction)nextBtAction:(UIButton *)sender {
-    
-    [[AppDelegate mainAppDelegate] showTabbarView];
+    ZZFirstSettingPasseordVC *vc = [ZZFirstSettingPasseordVC new];
+    vc.modalPresentationStyle = UIModalPresentationFullScreen;
+    [self presentViewController:vc animated:YES completion:nil];
+  //  [[AppDelegate mainAppDelegate] showTabbarView];
 }
 
 #pragma mark - NSNotification 处理倒计时事件

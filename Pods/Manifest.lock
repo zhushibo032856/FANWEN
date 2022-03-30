@@ -6,6 +6,9 @@ PODS:
   - AFNetworking/Reachability (3.0.4)
   - AFNetworking/Security (3.0.4)
   - AFNetworking/Serialization (3.0.4)
+  - Charts (3.6.0):
+    - Charts/Core (= 3.6.0)
+  - Charts/Core (3.6.0)
   - DZNEmptyDataSet (1.8.1)
   - IQKeyboardManager (6.5.9)
   - KVOController (1.2.0)
@@ -23,6 +26,7 @@ DEPENDENCIES:
   - AFNetworking/Reachability (~> 3.0.4)
   - AFNetworking/Security (~> 3.0.4)
   - AFNetworking/Serialization (~> 3.0.4)
+  - Charts
   - DZNEmptyDataSet (~> 1.8.1)
   - IQKeyboardManager
   - KVOController
@@ -36,6 +40,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - AFNetworking
+    - Charts
     - DZNEmptyDataSet
     - IQKeyboardManager
     - KVOController
@@ -48,6 +53,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AFNetworking: a0075feb321559dc78d9d85b55d11caa19eabb93
+  Charts: b1e3a1f5a1c9ba5394438ca3b91bd8c9076310af
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   IQKeyboardManager: 241cc94ccabc9deb8f8bd7d12f00d73288d13ecc
   KVOController: d72ace34afea42468329623b3379ab3cd1d286b6
@@ -58,6 +64,6 @@ SPEC CHECKSUMS:
   SDWebImage: cf6922231e95550934da2ada0f20f2becf2ceba9
   WechatOpenSDK: 6a4d1436c15b3b5fe2a0bd383f3046010186da44
 
-PODFILE CHECKSUM: 9d2dba292c87fe9d2e81f964e8c90c05ef7cefce
+PODFILE CHECKSUM: ba5b5eadf86eb7fc2111de2ff8f618924ec9217d
 
 COCOAPODS: 1.11.2

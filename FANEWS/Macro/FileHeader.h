@@ -29,7 +29,7 @@
 #import "AFNetworkReachabilityManager.h"
 #import <KVOController/KVOController.h>
 #import "WXApi.h"
-
+#import "FANEWS-Bridging-Header.h"
 /// .h头文件
 #import "ApiHeader.h"
 #import "CommenHeader.h"

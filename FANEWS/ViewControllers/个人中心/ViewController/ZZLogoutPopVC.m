@@ -35,8 +35,8 @@
 }
 //退出登录
 - (IBAction)logoutBtAction:(UIButton *)sender {
-    
-    
+    [self dismissViewControllerAnimated:YES completion:nil];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"LOGOUT" object:nil];
 }
 
 @end

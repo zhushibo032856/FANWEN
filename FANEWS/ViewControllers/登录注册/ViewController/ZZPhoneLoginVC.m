@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UITextView *phoneCodeTextView;
 @property (weak, nonatomic) IBOutlet UIButton *codeBT;
 @property (weak, nonatomic) IBOutlet UIView *backView;
+@property (weak, nonatomic) IBOutlet UIButton *protocolBT;
 
 @end
 

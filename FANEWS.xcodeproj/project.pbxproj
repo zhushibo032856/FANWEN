@@ -9,6 +9,15 @@
 /* Begin PBXBuildFile section */
 		760ABB1127F18DA8005A461F /* ZZAIImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 760ABB1027F18DA8005A461F /* ZZAIImageCell.m */; };
 		760ABB1427F18DE7005A461F /* ZZAINormalCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 760ABB1327F18DE7005A461F /* ZZAINormalCell.m */; };
+		760ABBE027F40116005A461F /* ZZDigitalCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 760ABBDE27F40116005A461F /* ZZDigitalCell.m */; };
+		760ABBE127F40116005A461F /* ZZDigitalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 760ABBDF27F40116005A461F /* ZZDigitalCell.xib */; };
+		760ABBE427F425A8005A461F /* ZZWelcomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 760ABBE327F425A8005A461F /* ZZWelcomeVC.m */; };
+		760ABBEE27F433F2005A461F /* Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760ABBED27F433F2005A461F /* Chart.swift */; };
+		760ABBF127F436AD005A461F /* ZZDigitalDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 760ABBF027F436AD005A461F /* ZZDigitalDetailVC.m */; };
+		760ABBF527F45F92005A461F /* ZZFirstSettingPasseordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 760ABBF327F45F92005A461F /* ZZFirstSettingPasseordVC.m */; };
+		760ABBF627F45F92005A461F /* ZZFirstSettingPasseordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 760ABBF427F45F92005A461F /* ZZFirstSettingPasseordVC.xib */; };
+		760ABBFA27F46489005A461F /* ZZKeyToLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 760ABBF827F46489005A461F /* ZZKeyToLoginVC.m */; };
+		760ABBFB27F46489005A461F /* ZZKeyToLoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 760ABBF927F46489005A461F /* ZZKeyToLoginVC.xib */; };
 		762AC5AE27E1BE8700380DF5 /* ZZLogoutPopVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 762AC5AC27E1BE8700380DF5 /* ZZLogoutPopVC.m */; };
 		762AC5AF27E1BE8700380DF5 /* ZZLogoutPopVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 762AC5AD27E1BE8700380DF5 /* ZZLogoutPopVC.xib */; };
 		762AC5B327E2D21B00380DF5 /* ZZPageControlBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 762AC5B227E2D21B00380DF5 /* ZZPageControlBaseView.m */; };
@@ -105,6 +114,21 @@
 		760ABB1027F18DA8005A461F /* ZZAIImageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZAIImageCell.m; sourceTree = "<group>"; };
 		760ABB1227F18DE7005A461F /* ZZAINormalCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZAINormalCell.h; sourceTree = "<group>"; };
 		760ABB1327F18DE7005A461F /* ZZAINormalCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZAINormalCell.m; sourceTree = "<group>"; };
+		760ABBDD27F40116005A461F /* ZZDigitalCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZDigitalCell.h; sourceTree = "<group>"; };
+		760ABBDE27F40116005A461F /* ZZDigitalCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZDigitalCell.m; sourceTree = "<group>"; };
+		760ABBDF27F40116005A461F /* ZZDigitalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZZDigitalCell.xib; sourceTree = "<group>"; };
+		760ABBE227F425A8005A461F /* ZZWelcomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZWelcomeVC.h; sourceTree = "<group>"; };
+		760ABBE327F425A8005A461F /* ZZWelcomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZWelcomeVC.m; sourceTree = "<group>"; };
+		760ABBEC27F433F2005A461F /* FANEWS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FANEWS-Bridging-Header.h"; sourceTree = "<group>"; };
+		760ABBED27F433F2005A461F /* Chart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chart.swift; sourceTree = "<group>"; };
+		760ABBEF27F436AD005A461F /* ZZDigitalDetailVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZDigitalDetailVC.h; sourceTree = "<group>"; };
+		760ABBF027F436AD005A461F /* ZZDigitalDetailVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZDigitalDetailVC.m; sourceTree = "<group>"; };
+		760ABBF227F45F92005A461F /* ZZFirstSettingPasseordVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZFirstSettingPasseordVC.h; sourceTree = "<group>"; };
+		760ABBF327F45F92005A461F /* ZZFirstSettingPasseordVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZFirstSettingPasseordVC.m; sourceTree = "<group>"; };
+		760ABBF427F45F92005A461F /* ZZFirstSettingPasseordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZZFirstSettingPasseordVC.xib; sourceTree = "<group>"; };
+		760ABBF727F46489005A461F /* ZZKeyToLoginVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZKeyToLoginVC.h; sourceTree = "<group>"; };
+		760ABBF827F46489005A461F /* ZZKeyToLoginVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZKeyToLoginVC.m; sourceTree = "<group>"; };
+		760ABBF927F46489005A461F /* ZZKeyToLoginVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZZKeyToLoginVC.xib; sourceTree = "<group>"; };
 		762AC5AB27E1BE8700380DF5 /* ZZLogoutPopVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZLogoutPopVC.h; sourceTree = "<group>"; };
 		762AC5AC27E1BE8700380DF5 /* ZZLogoutPopVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZLogoutPopVC.m; sourceTree = "<group>"; };
 		762AC5AD27E1BE8700380DF5 /* ZZLogoutPopVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZZLogoutPopVC.xib; sourceTree = "<group>"; };
@@ -434,6 +458,8 @@
 			children = (
 				769BE4EF27E02C580015CB21 /* AppDelegate.h */,
 				769BE4F027E02C580015CB21 /* AppDelegate.m */,
+				760ABBE227F425A8005A461F /* ZZWelcomeVC.h */,
+				760ABBE327F425A8005A461F /* ZZWelcomeVC.m */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -589,6 +615,12 @@
 				769BE5B827E08A020015CB21 /* ZZPhoneCodeVC.h */,
 				769BE5B927E08A020015CB21 /* ZZPhoneCodeVC.m */,
 				769BE5BA27E08A020015CB21 /* ZZPhoneCodeVC.xib */,
+				760ABBF227F45F92005A461F /* ZZFirstSettingPasseordVC.h */,
+				760ABBF327F45F92005A461F /* ZZFirstSettingPasseordVC.m */,
+				760ABBF427F45F92005A461F /* ZZFirstSettingPasseordVC.xib */,
+				760ABBF727F46489005A461F /* ZZKeyToLoginVC.h */,
+				760ABBF827F46489005A461F /* ZZKeyToLoginVC.m */,
+				760ABBF927F46489005A461F /* ZZKeyToLoginVC.xib */,
 				769BE5AE27E089B30015CB21 /* ZZRegisterVC.h */,
 				769BE5AF27E089B30015CB21 /* ZZRegisterVC.m */,
 				769BE5B027E089B30015CB21 /* ZZRegisterVC.xib */,
@@ -644,6 +676,9 @@
 		769BE57F27E073880015CB21 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				760ABBDD27F40116005A461F /* ZZDigitalCell.h */,
+				760ABBDE27F40116005A461F /* ZZDigitalCell.m */,
+				760ABBDF27F40116005A461F /* ZZDigitalCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -653,6 +688,8 @@
 			children = (
 				769BE59A27E07D840015CB21 /* ZZDigitalNewspaperVC.h */,
 				769BE59B27E07D840015CB21 /* ZZDigitalNewspaperVC.m */,
+				760ABBEF27F436AD005A461F /* ZZDigitalDetailVC.h */,
+				760ABBF027F436AD005A461F /* ZZDigitalDetailVC.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -795,6 +832,8 @@
 				769BE4FB27E02C5A0015CB21 /* Assets.xcassets */,
 				769BE4FD27E02C5A0015CB21 /* LaunchScreen.storyboard */,
 				769BE50127E02C5A0015CB21 /* main.m */,
+				760ABBED27F433F2005A461F /* Chart.swift */,
+				760ABBEC27F433F2005A461F /* FANEWS-Bridging-Header.h */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -883,6 +922,7 @@
 				TargetAttributes = {
 					769BE4EB27E02C580015CB21 = {
 						CreatedOnToolsVersion = 13.1;
+						LastSwiftMigration = 1310;
 					};
 					769BE50627E02C5A0015CB21 = {
 						CreatedOnToolsVersion = 13.1;
@@ -924,6 +964,7 @@
 				769BE5AD27E0899D0015CB21 /* ZZLoginVC.xib in Resources */,
 				76CBC3A327E30A9B00A1FAF1 /* ZZEditCollectionViewCell.xib in Resources */,
 				769BE5BC27E08A020015CB21 /* ZZPhoneCodeVC.xib in Resources */,
+				760ABBFB27F46489005A461F /* ZZKeyToLoginVC.xib in Resources */,
 				769BE5C127E18DAD0015CB21 /* ZZMineCell.xib in Resources */,
 				769BE4FF27E02C5A0015CB21 /* LaunchScreen.storyboard in Resources */,
 				769BE5C627E1A48B0015CB21 /* ZZMineHeadView.xib in Resources */,
@@ -931,6 +972,8 @@
 				762AC5AF27E1BE8700380DF5 /* ZZLogoutPopVC.xib in Resources */,
 				76CBC3B927E4531B00A1FAF1 /* ZZSystomInfoCell.xib in Resources */,
 				76CBC3B427E3405800A1FAF1 /* ZZMessageCenterCell.xib in Resources */,
+				760ABBF627F45F92005A461F /* ZZFirstSettingPasseordVC.xib in Resources */,
+				760ABBE127F40116005A461F /* ZZDigitalCell.xib in Resources */,
 				769BE54F27E03F700015CB21 /* MBProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1001,10 +1044,13 @@
 				769BE55527E040710015CB21 /* ZZBPPopViewController.m in Sources */,
 				769BE54927E03F150015CB21 /* WebViewJavascriptBridge_JS.m in Sources */,
 				769BE54E27E03F700015CB21 /* MBProgressHUD+JDLHUD.m in Sources */,
+				760ABBE427F425A8005A461F /* ZZWelcomeVC.m in Sources */,
 				769BE59C27E07D840015CB21 /* ZZDigitalNewspaperVC.m in Sources */,
 				76CBC3B827E4531B00A1FAF1 /* ZZSystomInfoCell.m in Sources */,
 				767E77F027E8487A00665E60 /* OttoFPSButton.m in Sources */,
 				769BE55B27E060DE0015CB21 /* ZZBaseTabBarVC.m in Sources */,
+				760ABBF127F436AD005A461F /* ZZDigitalDetailVC.m in Sources */,
+				760ABBE027F40116005A461F /* ZZDigitalCell.m in Sources */,
 				76CBC3BC27E4781D00A1FAF1 /* ZZInfoModel.m in Sources */,
 				76CBC3AF27E3268E00A1FAF1 /* ZZPopularActivitiesVC.m in Sources */,
 				769BE53127E03BB30015CB21 /* ZZBaseViewController.m in Sources */,
@@ -1033,12 +1079,14 @@
 				762AC5AE27E1BE8700380DF5 /* ZZLogoutPopVC.m in Sources */,
 				769BE57027E070EE0015CB21 /* ZZApiManager.m in Sources */,
 				769BE5A227E07DC30015CB21 /* ZZIntelligentRetrievalVC.m in Sources */,
+				760ABBEE27F433F2005A461F /* Chart.swift in Sources */,
 				760ABB1127F18DA8005A461F /* ZZAIImageCell.m in Sources */,
 				76CBC3AC27E3266E00A1FAF1 /* ZZActivitiesRewardVC.m in Sources */,
 				76CBC3A927E3265100A1FAF1 /* ZZSystomInfoVC.m in Sources */,
 				767E77EC27E842EF00665E60 /* ZZTextModel.m in Sources */,
 				7675683F27EC62EB0024BF7F /* ZZUserProtocolPrivacyPolicyVC.m in Sources */,
 				769BE5C427E1A46C0015CB21 /* ZZMineHeadView.m in Sources */,
+				760ABBFA27F46489005A461F /* ZZKeyToLoginVC.m in Sources */,
 				769BE59F27E07DA80015CB21 /* ZZEruditeVC.m in Sources */,
 				769BE50227E02C5A0015CB21 /* main.m in Sources */,
 				7675684527EC81050024BF7F /* ZZ text.m in Sources */,
@@ -1048,6 +1096,7 @@
 				762AC5B327E2D21B00380DF5 /* ZZPageControlBaseView.m in Sources */,
 				769BE56A27E06E8E0015CB21 /* ZZNSTimerManager.m in Sources */,
 				769BE5BB27E08A020015CB21 /* ZZPhoneCodeVC.m in Sources */,
+				760ABBF527F45F92005A461F /* ZZFirstSettingPasseordVC.m in Sources */,
 				769BE59627E079310015CB21 /* ZZBaseTableView.m in Sources */,
 				767E77F627E84FA800665E60 /* ZZCycleScrollview.m in Sources */,
 				769BE54827E03F150015CB21 /* WKWebViewJavascriptBridge.m in Sources */,
@@ -1219,9 +1268,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = FANEWS/FANEWS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 25NV2X884D;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/FANEWS/Macro/PrefixHeader.pch";
@@ -1255,6 +1306,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.fanews.FANEWS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "FANEWS/Supporting Files/FANEWS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 			};
@@ -1266,9 +1320,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = FANEWS/FANEWS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 25NV2X884D;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/FANEWS/Macro/PrefixHeader.pch";
@@ -1302,6 +1358,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.fanews.FANEWS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "FANEWS/Supporting Files/FANEWS-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 			};
@@ -1310,6 +1368,7 @@
 		769BE51F27E02C5A0015CB21 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1333,6 +1392,7 @@
 		769BE52027E02C5A0015CB21 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1356,6 +1416,7 @@
 		769BE52227E02C5A0015CB21 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 25NV2X884D;
@@ -1377,6 +1438,7 @@
 		769BE52327E02C5A0015CB21 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 25NV2X884D;

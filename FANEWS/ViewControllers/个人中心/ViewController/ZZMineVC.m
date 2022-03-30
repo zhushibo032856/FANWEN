@@ -22,15 +22,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
- //   self.navigationItem.leftBarButtonItem = nil;
+    self.navigationItem.leftBarButtonItem = nil;
     self.title = @"我的";
     
     [self.view addSubview:self.mineTableView];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(logout) name:@"LOGOUT" object:nil];
 }
 #pragma mark 懒加载
 - (UITableView *)mineTableView{
     if (!_mineTableView) {
-        _mineTableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight) style:UITableViewStyleGrouped];
+        _mineTableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight - kTabbar_H) style:UITableViewStyleGrouped];
         _mineTableView.delegate = self;
         _mineTableView.dataSource = self;
         _mineTableView.rowHeight = 50;
@@ -115,6 +117,9 @@
     ZZLogoutPopVC *vc = [ZZLogoutPopVC new];
     ZZBPPopViewController *popVC = [ZZBPPopViewController initVC:vc];
     [self presentViewController:popVC animated:YES completion:nil];
+}
+- (void)logout{
+    [ZZCommenTools toolPresentLoginVCFrom:self];
 }
 
 @end

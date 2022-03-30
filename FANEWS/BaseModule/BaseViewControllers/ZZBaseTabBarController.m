@@ -5,7 +5,7 @@
 //  Created by fanews on 2022/3/15.
 //  Copyright © 2022 Fanews. All rights reserved.
 //
-
+#import "ZZMineVC.h"
 #import "ZZBaseTabBarController.h"
 
 @interface ZZBaseTabBarController ()<UITabBarControllerDelegate>
@@ -84,11 +84,15 @@
     ZZEruditeVC *eruditeVC = [ZZEruditeVC new];
     [self addChildViewController:eruditeVC image:@"" selectedImage:@"" title:@"觅云"];
     
-    ZZIntelligentRetrievalVC *intelligentVC = [ZZIntelligentRetrievalVC new];
-    [self addChildViewController:intelligentVC image:@"tabbar-8" selectedImage:@"tabbar-7" title:@"AI智能检索"];
+//    ZZIntelligentRetrievalVC *intelligentVC = [ZZIntelligentRetrievalVC new];
+//    [self addChildViewController:intelligentVC image:@"tabbar-8" selectedImage:@"tabbar-7" title:@"AI智能检索"];
     
     ZZRecommendedColumnVC *recommendedVC = [ZZRecommendedColumnVC new];
     [self addChildViewController:recommendedVC image:@"tabbar-10" selectedImage:@"tabbar-9" title:@"推荐栏目"];
+    
+    ZZMineVC *intelligentVC = [ZZMineVC new];
+    [self addChildViewController:intelligentVC image:@"tabbar-8" selectedImage:@"tabbar-7" title:@"我的"];
+    
 }
 
 - (void)addChildViewController:(ZZBaseViewController *)childController image:(NSString *)imageName selectedImage:(NSString *)selectedImageName title:(NSString *)title{
@@ -97,7 +101,7 @@
     
     childController.title = title;
 
-   // childController.view.backgroundColor = kColor(255, 255, 255);
+    childController.view.backgroundColor = kColor(255, 255, 255);
     
     childController.tabBarItem.image = [[UIImage imageNamed:imageName] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     childController.tabBarItem.selectedImage = [[UIImage imageNamed:selectedImageName] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];

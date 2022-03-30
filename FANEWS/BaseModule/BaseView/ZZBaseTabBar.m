@@ -35,7 +35,7 @@
 - (void)layoutSubviews {
     [super layoutSubviews];
     
-    _centerBtn.frame = CGRectMake((kScreenWidth - _centerWidth)/2.0, -_centerHeight/2.0 + self.centerOffsetY + 7, _centerWidth, _centerHeight);
+    _centerBtn.frame = CGRectMake((kScreenWidth - _centerWidth)/2.0, -_centerHeight/2.0 + self.centerOffsetY + 12, _centerWidth, _centerHeight);
 }
 
 - (void)setCenterImage:(UIImage *)centerImage {
