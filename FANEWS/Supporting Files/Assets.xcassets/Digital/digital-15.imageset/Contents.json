@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "底部弹层／微信.png",
+      "filename" : "底部弹层／刷新.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "底部弹层／微信@2x.png",
+      "filename" : "底部弹层／刷新@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "底部弹层／微信@3x.png",
+      "filename" : "底部弹层／刷新@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

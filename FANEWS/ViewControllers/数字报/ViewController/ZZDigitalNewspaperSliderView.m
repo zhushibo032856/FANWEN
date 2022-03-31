@@ -8,6 +8,7 @@
 
 #import "ZZDigitalNewspaperSliderView.h"
 #import "XHPageControl.h"
+#import "ZZDigitalNewspaperDetailVC.h"
 #define number 15
 @interface ZZDigitalNewspaperSliderView ()<UIScrollViewDelegate,XHPageControlDelegate>
 
@@ -86,11 +87,22 @@
 
 -(UIImageView *)createImgView:(int)index{
     UIImageView *imgV = [[UIImageView alloc] init];
+    imgV.tag = 100 + index;
+    imgV.userInteractionEnabled = YES;
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(pushDetailWith:)];
+    [imgV addGestureRecognizer:tap];
     [imgV sd_setImageWithURL:[NSURL URLWithString:@"https://alifei01.cfp.cn/creative/vcg/veer/1600water/veer-368621010.jpg"]];
     imgV.frame = CGRectMake(kScreenWidth * (index-1) + 15, 0, kScreenWidth - 30, kScreenHeight - kNavHeight - 130);
     return imgV;
 }
 
-
+- (void)pushDetailWith:(UITapGestureRecognizer *)tap{
+    NSInteger index = tap.view.tag - 100;
+    NSLog(@"%ld",index);
+    
+    ZZDigitalNewspaperDetailVC *vc = [ZZDigitalNewspaperDetailVC new];
+    
+    [self.navigationController pushViewController:vc animated:YES];
+}
 
 @end

@@ -23,6 +23,10 @@
 		760ABC0427F593FE005A461F /* ZZDigitalNewspaperSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 760ABC0327F593FE005A461F /* ZZDigitalNewspaperSliderView.m */; };
 		760ABC0827F59A83005A461F /* XHPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 760ABC0627F59A83005A461F /* XHPageControl.m */; };
 		760ABC0B27F5AD4A005A461F /* ZZDigitalNewspaperDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 760ABC0A27F5AD4A005A461F /* ZZDigitalNewspaperDetailVC.m */; };
+		760ABC1227F5B3D6005A461F /* ZZDitigalSettingPopVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 760ABC1027F5B3D6005A461F /* ZZDitigalSettingPopVC.m */; };
+		760ABC1527F5B45C005A461F /* ZZDitigalSettingPopVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 760ABC1427F5B45C005A461F /* ZZDitigalSettingPopVC.xib */; };
+		760ABC1927F5B5DE005A461F /* ZZPopSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 760ABC1727F5B5DE005A461F /* ZZPopSettingCell.m */; };
+		760ABC1A27F5B5DE005A461F /* ZZPopSettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 760ABC1827F5B5DE005A461F /* ZZPopSettingCell.xib */; };
 		762AC5AE27E1BE8700380DF5 /* ZZLogoutPopVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 762AC5AC27E1BE8700380DF5 /* ZZLogoutPopVC.m */; };
 		762AC5AF27E1BE8700380DF5 /* ZZLogoutPopVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 762AC5AD27E1BE8700380DF5 /* ZZLogoutPopVC.xib */; };
 		762AC5B327E2D21B00380DF5 /* ZZPageControlBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 762AC5B227E2D21B00380DF5 /* ZZPageControlBaseView.m */; };
@@ -143,6 +147,12 @@
 		760ABC0727F59A83005A461F /* XHPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHPageControl.h; sourceTree = "<group>"; };
 		760ABC0927F5AD4A005A461F /* ZZDigitalNewspaperDetailVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZDigitalNewspaperDetailVC.h; sourceTree = "<group>"; };
 		760ABC0A27F5AD4A005A461F /* ZZDigitalNewspaperDetailVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZDigitalNewspaperDetailVC.m; sourceTree = "<group>"; };
+		760ABC0F27F5B3D6005A461F /* ZZDitigalSettingPopVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZDitigalSettingPopVC.h; sourceTree = "<group>"; };
+		760ABC1027F5B3D6005A461F /* ZZDitigalSettingPopVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZDitigalSettingPopVC.m; sourceTree = "<group>"; };
+		760ABC1427F5B45C005A461F /* ZZDitigalSettingPopVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZZDitigalSettingPopVC.xib; sourceTree = "<group>"; };
+		760ABC1627F5B5DE005A461F /* ZZPopSettingCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZPopSettingCell.h; sourceTree = "<group>"; };
+		760ABC1727F5B5DE005A461F /* ZZPopSettingCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZPopSettingCell.m; sourceTree = "<group>"; };
+		760ABC1827F5B5DE005A461F /* ZZPopSettingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZZPopSettingCell.xib; sourceTree = "<group>"; };
 		762AC5AB27E1BE8700380DF5 /* ZZLogoutPopVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZLogoutPopVC.h; sourceTree = "<group>"; };
 		762AC5AC27E1BE8700380DF5 /* ZZLogoutPopVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZLogoutPopVC.m; sourceTree = "<group>"; };
 		762AC5AD27E1BE8700380DF5 /* ZZLogoutPopVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZZLogoutPopVC.xib; sourceTree = "<group>"; };
@@ -699,6 +709,9 @@
 				760ABBDD27F40116005A461F /* ZZDigitalCell.h */,
 				760ABBDE27F40116005A461F /* ZZDigitalCell.m */,
 				760ABBDF27F40116005A461F /* ZZDigitalCell.xib */,
+				760ABC1627F5B5DE005A461F /* ZZPopSettingCell.h */,
+				760ABC1727F5B5DE005A461F /* ZZPopSettingCell.m */,
+				760ABC1827F5B5DE005A461F /* ZZPopSettingCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -712,6 +725,9 @@
 				760ABC0327F593FE005A461F /* ZZDigitalNewspaperSliderView.m */,
 				760ABC0927F5AD4A005A461F /* ZZDigitalNewspaperDetailVC.h */,
 				760ABC0A27F5AD4A005A461F /* ZZDigitalNewspaperDetailVC.m */,
+				760ABC0F27F5B3D6005A461F /* ZZDitigalSettingPopVC.h */,
+				760ABC1027F5B3D6005A461F /* ZZDitigalSettingPopVC.m */,
+				760ABC1427F5B45C005A461F /* ZZDitigalSettingPopVC.xib */,
 				760ABBEF27F436AD005A461F /* ZZDigitalDetailVC.h */,
 				760ABBF027F436AD005A461F /* ZZDigitalDetailVC.m */,
 			);
@@ -991,6 +1007,7 @@
 				769BE5B727E089E80015CB21 /* ZZPhoneLoginVC.xib in Resources */,
 				769BE5AD27E0899D0015CB21 /* ZZLoginVC.xib in Resources */,
 				76CBC3A327E30A9B00A1FAF1 /* ZZEditCollectionViewCell.xib in Resources */,
+				760ABC1A27F5B5DE005A461F /* ZZPopSettingCell.xib in Resources */,
 				769BE5BC27E08A020015CB21 /* ZZPhoneCodeVC.xib in Resources */,
 				760ABBFB27F46489005A461F /* ZZKeyToLoginVC.xib in Resources */,
 				769BE5C127E18DAD0015CB21 /* ZZMineCell.xib in Resources */,
@@ -1003,6 +1020,7 @@
 				760ABBF627F45F92005A461F /* ZZFirstSettingPasseordVC.xib in Resources */,
 				760ABBE127F40116005A461F /* ZZDigitalCell.xib in Resources */,
 				769BE54F27E03F700015CB21 /* MBProgressHUD.bundle in Resources */,
+				760ABC1527F5B45C005A461F /* ZZDitigalSettingPopVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1075,6 +1093,7 @@
 				769BE54E27E03F700015CB21 /* MBProgressHUD+JDLHUD.m in Sources */,
 				760ABBE427F425A8005A461F /* ZZWelcomeVC.m in Sources */,
 				769BE59C27E07D840015CB21 /* ZZDigitalNewspaperVC.m in Sources */,
+				760ABC1927F5B5DE005A461F /* ZZPopSettingCell.m in Sources */,
 				76CBC3B827E4531B00A1FAF1 /* ZZSystomInfoCell.m in Sources */,
 				767E77F027E8487A00665E60 /* OttoFPSButton.m in Sources */,
 				769BE55B27E060DE0015CB21 /* ZZBaseTabBarVC.m in Sources */,
@@ -1087,6 +1106,7 @@
 				76CBC3A227E30A9B00A1FAF1 /* ZZEditCollectionViewCell.m in Sources */,
 				769BE5B627E089E80015CB21 /* ZZPhoneLoginVC.m in Sources */,
 				769BE59927E07C2A0015CB21 /* ZZThematicAnalysisVC.m in Sources */,
+				760ABC1227F5B3D6005A461F /* ZZDitigalSettingPopVC.m in Sources */,
 				76CBC3A627E3252E00A1FAF1 /* ZZMessageCenterVC.m in Sources */,
 				769BE56727E06C6F0015CB21 /* ZZCommenTools.m in Sources */,
 				769BE5AC27E0899D0015CB21 /* ZZLoginVC.m in Sources */,

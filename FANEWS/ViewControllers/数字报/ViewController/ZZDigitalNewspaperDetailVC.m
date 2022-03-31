@@ -7,7 +7,7 @@
 //
 
 #import "ZZDigitalNewspaperDetailVC.h"
-
+#import "ZZDitigalSettingPopVC.h"
 @interface ZZDigitalNewspaperDetailVC ()
 
 @end
@@ -16,17 +16,29 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    [self setRightBt];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)setRightBt{
+    UIView *rightView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 40, 30)];
+    
+    UIButton * rightBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    rightBtn.frame = CGRectMake(5, 5, 24, 24);
+    [rightBtn setImage:[UIImage imageNamed:@"digital-6"] forState:UIControlStateNormal];
+    [rightBtn addTarget:self action:@selector(navigationRIghtEvent:) forControlEvents:UIControlEventTouchUpInside];
+    [rightView addSubview:rightBtn];
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:rightView];
+    
 }
-*/
+
+- (void)navigationRIghtEvent:(UIButton *)sender{
+
+    ZZDitigalSettingPopVC *vc = [ZZDitigalSettingPopVC new];
+    ZZBPPopViewController *popvc = [ZZBPPopViewController initVC:vc];
+    [self presentViewController:popvc animated:YES completion:nil];
+}
 
 @end
