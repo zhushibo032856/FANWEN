@@ -13,11 +13,11 @@ NS_ASSUME_NONNULL_BEGIN
 @interface ZZThematicNormalCell : UITableViewCell
 
 @property (nonatomic, strong) UILabel *titleLabel;
-@property (nonatomic, strong) UILabel *typeLabel;
 @property (nonatomic, strong) UILabel *timeLabel;
-@property (nonatomic, strong) UILabel *lineLabel;
+@property (nonatomic, strong) UIImageView *newsImageView;
+@property (nonatomic, strong) UIImageView *timeImageView;
 
-+ (CGFloat)heightWithModel:(ZZTextModel *)model;
+@property (nonatomic, strong) UILabel *lineLabel;
 
 - (void)initCellWith:(ZZTextModel *)model;
 

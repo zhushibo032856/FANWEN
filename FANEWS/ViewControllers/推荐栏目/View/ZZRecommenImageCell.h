@@ -1,8 +1,8 @@
 //
-//  ZZThematicImageCell.h
+//  ZZRecommenImageCell.h
 //  FANEWS
 //
-//  Created by fanews on 2022/3/24.
+//  Created by fanews on 2022/3/31.
 //  Copyright © 2022 Fanews. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 #import "ZZTextModel.h"
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ZZThematicImageCell : UITableViewCell
+@interface ZZRecommenImageCell : UITableViewCell
 
 @property (nonatomic, strong) UILabel *titleLabel;
 @property (nonatomic, strong) UILabel *typeLabel;
@@ -21,7 +21,6 @@ NS_ASSUME_NONNULL_BEGIN
 + (CGFloat)heightWithModel:(ZZTextModel *)model;
 
 - (void)initCellWith:(ZZTextModel *)model;
-
 @end
 
 NS_ASSUME_NONNULL_END

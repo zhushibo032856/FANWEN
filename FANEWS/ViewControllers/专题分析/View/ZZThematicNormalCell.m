@@ -15,27 +15,35 @@
     if (self) {
         self.selectionStyle = UITableViewCellSelectionStyleNone;
         [self.contentView addSubview:self.titleLabel];
-        [self.contentView addSubview:self.typeLabel];
+        [self.contentView addSubview:self.newsImageView];
+        [self.contentView addSubview:self.timeImageView];
         [self.contentView addSubview:self.timeLabel];
         [self.contentView addSubview:self.lineLabel];
         
-        [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.mas_equalTo(self.contentView).offset(12);
-            make.left.right.mas_equalTo(self.contentView);
+        [self.newsImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.mas_equalTo(self.contentView);
+            make.top.mas_equalTo(self.contentView).offset(20);
+            make.bottom.mas_equalTo(self.contentView).offset(-20);
+            make.width.mas_equalTo(145);
         }];
         
-        [self.typeLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.left.mas_equalTo(self.contentView);
-            make.bottom.mas_equalTo(self.contentView).offset(-10);
-            make.height.mas_equalTo(18);
-            make.top.mas_equalTo(self.titleLabel.mas_bottom).offset(10);
+        [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.mas_equalTo(self.contentView).offset(20);
+            make.left.mas_equalTo(self.newsImageView.mas_right).offset(12);
+            make.right.mas_equalTo(self.contentView);
+            make.height.mas_lessThanOrEqualTo(65);
+        }];
+        
+        [self.timeImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.mas_equalTo(self.newsImageView.mas_right).offset(12);
+            make.bottom.mas_equalTo(self.contentView).offset(-22.5);
+            make.width.height.mas_equalTo(10);
         }];
         
         [self.timeLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.right.mas_equalTo(self.contentView);
-            make.bottom.mas_equalTo(self.contentView).offset(-10);
-            make.height.mas_equalTo(18);
-            make.top.mas_equalTo(self.titleLabel.mas_bottom).offset(10);
+            make.bottom.mas_equalTo(self.contentView).offset(-20);
+            make.height.mas_equalTo(15);
+            make.left.mas_equalTo(self.timeImageView.mas_right).offset(5);
         }];
         
         [self.lineLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -46,26 +54,29 @@
     return self;
 }
 
-+ (CGFloat)heightWithModel:(ZZTextModel *)model{
-    
-    NSString *string = model.text;
-    NSMutableAttributedString *attrStr = [[NSMutableAttributedString alloc] initWithString:string];
-    NSRange allRange = [string rangeOfString:string];
-    [attrStr addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:17.0] range:allRange];
-    [attrStr addAttribute:NSForegroundColorAttributeName value:[UIColor darkGrayColor]range:allRange];
-    CGFloat titleHeight;
-    NSStringDrawingOptions options =  NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading;
-    // 获取label的最大宽度
-    CGRect rect = [attrStr boundingRectWithSize:CGSizeMake(kScreenWidth - 30, CGFLOAT_MAX)options:options context:nil];
-    titleHeight = ceilf(rect.size.height);
-    return titleHeight + 50; // 动态高度 + 静态高度
-}
-
 - (void)initCellWith:(ZZTextModel *)model{
     self.titleLabel.text = model.text;
-    self.typeLabel.text = [NSString stringWithFormat:@"indexPath"];
     self.timeLabel.text = @"2022-03-02 18:09";
+    [self.newsImageView sd_setImageWithURL:[NSURL URLWithString:@"https://alifei01.cfp.cn/creative/vcg/veer/1600water/veer-368621010.jpg"]];
 }
+
+- (UIImageView *)newsImageView{
+    if (!_newsImageView) {
+        _newsImageView = [[UIImageView alloc]init];
+        _newsImageView.layer.masksToBounds = YES;
+        _newsImageView.layer.cornerRadius = 8;
+    }
+    return _newsImageView;
+}
+
+- (UIImageView *)timeImageView{
+    if (!_timeImageView) {
+        _timeImageView = [[UIImageView alloc]init];
+        _timeImageView.image = [UIImage imageNamed:@"Thematic-2"];
+    }
+    return _timeImageView;
+}
+
 - (UILabel *)titleLabel{
     if (!_titleLabel) {
         _titleLabel = [[UILabel alloc]init];
@@ -74,15 +85,6 @@
         _titleLabel.font = KUIFont(17);
     }
     return _titleLabel;
-}
-
-- (UILabel *)typeLabel{
-    if (!_typeLabel) {
-        _typeLabel = [[UILabel alloc]init];
-        _typeLabel.textColor = kColor(153, 153, 153);
-        _typeLabel.font = KUIFont(12);
-    }
-    return _typeLabel;
 }
 
 - (UILabel *)timeLabel{

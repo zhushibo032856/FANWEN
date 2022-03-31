@@ -1,14 +1,14 @@
 //
-//  ZZThematicImageCell.m
+//  ZZRecommenImageCell.m
 //  FANEWS
 //
-//  Created by fanews on 2022/3/24.
+//  Created by fanews on 2022/3/31.
 //  Copyright © 2022 Fanews. All rights reserved.
 //
 
-#import "ZZThematicImageCell.h"
+#import "ZZRecommenImageCell.h"
 
-@implementation ZZThematicImageCell
+@implementation ZZRecommenImageCell
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];

@@ -8,8 +8,12 @@
 
 #import "ZZRecommendedColumnVC.h"
 #import "ZZTitleEditVC.h"
+#import "ZZRecommenImageCell.h"
+#import "ZZRecommenNormalCell.h"
 
-@interface ZZRecommendedColumnVC ()<ZZPageControlViewDelegate,UITableViewDelegate,UITableViewDataSource>
+#import "ZZTextModel.h"
+
+@interface ZZRecommendedColumnVC ()<ZZPageControlViewDelegate,UITableViewDelegate,UITableViewDataSource,ZZCycleScrollViewDegelate>
 
 @property (nonatomic, strong) UIView *backView;
 @property (nonatomic, strong) UILabel *lineLabel;
@@ -21,9 +25,18 @@
 
 @property (nonatomic, assign) NSInteger lastIndex;//记录最后移动的下标
 
+@property (nonatomic, strong) NSMutableArray *dataArr;
+
 @end
 
 @implementation ZZRecommendedColumnVC
+
+- (NSMutableArray *)dataArr{
+    if (!_dataArr) {
+        _dataArr = [NSMutableArray arrayWithCapacity:0];
+    }
+    return _dataArr;
+}
 
 - (NSMutableArray *)titleArr{
     if (!_titleArr) {
@@ -36,7 +49,7 @@
     [super viewDidLoad];
     self.navigationItem.leftBarButtonItem = nil;
     // Do any additional setup after loading the view.
-    
+    self.view.backgroundColor = [UIColor whiteColor];
     
     
     [self initViewAndDataWith:0];
@@ -49,6 +62,27 @@
     [self.view addSubview:self.myTableView];
 
 
+    [self getData];
+}
+
+- (void)getData{
+    NSString *text = @"内容越来越多";
+    for (int i = 0; i < 100; i ++) {
+        text = [text stringByAppendingString:@"越来越多"];
+        ZZTextModel *model = [[ZZTextModel alloc] init];
+        model.text = text;
+        if (i % 2 == 0) {
+            model.isDouble = YES;
+            model.cellHeight = 145;
+        }else{
+            model.isDouble = NO;
+            // 计算高度，赋值给model
+            model.cellHeight = [ZZRecommenNormalCell heightWithModel:model];
+        }
+    //    model.cellHeight = 145;
+        [self.dataArr addObject:model];
+    }
+    [_myTableView reloadData];
 }
 
 - (void)initViewAndDataWith:(NSInteger)index{
@@ -77,10 +111,13 @@
 }
 - (ZZBaseTableView *)myTableView{
     if (!_myTableView) {
-        _myTableView = [[ZZBaseTableView alloc]initWithFrame:CGRectMake(0, _backView.bottomY, kScreenWidth, kScreenHeight - kNavHeight - kTabbar_H - 45)];
+        _myTableView = [[ZZBaseTableView alloc]initWithFrame:CGRectMake(15, _backView.bottomY, kScreenWidth - 30, kScreenHeight - kNavHeight - kTabbar_H - 45) style:UITableViewStyleGrouped];
         _myTableView.delegate = self;
         _myTableView.dataSource = self;
-        [_myTableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
+        _myTableView.backgroundColor = [UIColor whiteColor];
+        [_myTableView registerClass:[ZZRecommenNormalCell class] forCellReuseIdentifier:@"ZZRecommenNormalCell"];
+        
+        [_myTableView registerClass:[ZZRecommenImageCell class] forCellReuseIdentifier:@"ZZRecommenImageCell"];
     }
     return _myTableView;
 }
@@ -119,21 +156,6 @@
     [self.backView addSubview:self.pageView];
     
 }
-//- (ZZPageControlBaseView *)pageView{
-//    if (!_pageView) {
-//        _pageView = [[ZZPageControlBaseView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, 44)];
-//        _pageView.dataArr = [NSMutableArray arrayWithObjects:@"", nil];
-//        _pageView.tagTextColor_normal = kColor(50, 50, 50);
-//        _pageView.tagTextColor_selected = kColor(86, 141, 229);
-//        _pageView.tagTextFont_normal = 16;
-//        _pageView.tagTextFont_selected = 16;
-//        _pageView.sliderColor = kColor(86, 141, 229);
-//        _pageView.sliderW = 20;
-//        _pageView.sliderH = 2;
-//    }
-//    return _pageView;
-//}
-
 
 //点击代理
 - (void)didSelectedIndex:(NSInteger)index{
@@ -166,14 +188,74 @@
     [self presentViewController:popVC animated:YES completion:nil];
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    ZZTextModel *model = self.dataArr[indexPath.row];
+ 
+    return model.cellHeight;
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 0;
+    return self.dataArr.count;
 }
-
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return self.dataArr.count > 0 ? 1 : 0;
+}
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+    ZZTextModel *model = self.dataArr[indexPath.row];
+    if (model.isDouble == YES) {
+        ZZRecommenImageCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ZZRecommenImageCell" forIndexPath:indexPath];
+
+        [cell initCellWith:model];
+        return cell;
+    }else{
+        ZZRecommenNormalCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ZZRecommenNormalCell" forIndexPath:indexPath];
+
+        [cell initCellWith:model];
+        return cell;
+    }
     
-    return cell;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    return 150;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+    
+    ZZCycleScrollview *cycleView = [ZZCycleScrollview cycleScrollViewWithFrame:CGRectMake(0, 0, kScreenWidth, 150) delegate:self placeholderImage:[UIImage imageNamed:@"home_1"]];
+    cycleView.backgroundColor = [UIColor whiteColor];
+    cycleView.layer.masksToBounds = YES;
+    cycleView.layer.cornerRadius = 8;
+   // cycleView.localizationImageNamesGroup = @[@"home_1",@"home_1",@"home_1"];
+
+    
+  //  if (self.imageArr.count == 0) {
+        
+        cycleView.imageURLStringsGroup = @[@"https://alifei01.cfp.cn/creative/vcg/veer/1600water/veer-368621010.jpg",@"https://alifei01.cfp.cn/creative/vcg/veer/1600water/veer-368621010.jpg",@"https://alifei01.cfp.cn/creative/vcg/veer/1600water/veer-368621010.jpg",@"https://alifei01.cfp.cn/creative/vcg/veer/1600water/veer-368621010.jpg",@"https://alifei01.cfp.cn/creative/vcg/veer/1600water/veer-368621010.jpg"];
+//    }else{
+//        cycleView.imageURLStringsGroup = self.imageArr;
+//    }
+
+    cycleView.autoScroll = YES;
+  //  cycleView.pageControlStyle = YHCycleScrollViewPageContolStyleNone;
+    cycleView.scrollDirection =  UICollectionViewScrollDirectionHorizontal;
+    cycleView.currentPageDotColor = [UIColor whiteColor];
+    cycleView.pageDotColor = [UIColor lightGrayColor];
+    cycleView.pageControlDotSize = CGSizeMake(5, 5);
+    cycleView.pageControlAliment = ZZCycleScrollViewPageContolAlimentRight;
+
+    cycleView.indicatorMargin = 5;
+    cycleView.indicatorDiameter = 5;
+    cycleView.normalDiameter = 5.0;
+    cycleView.showPageControl = YES;
+    
+    return cycleView;
+    
+}
+
+-(void)zz_cycleScrollView:(ZZCycleScrollview *)cycleScrollView didSelectItemAtIndex:(NSInteger)index{
+    NSLog(@"点击了%ld",index);
+
+    
+}
 @end

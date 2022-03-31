@@ -82,13 +82,13 @@
     [self addChildViewController:digitalVC image:@"tabbar-4" selectedImage:@"tabbar-3" title:@"数字报"];
     
     ZZEruditeVC *eruditeVC = [ZZEruditeVC new];
-    [self addChildViewController:eruditeVC image:@"" selectedImage:@"" title:@"觅云"];
+    [self addChildViewController:eruditeVC image:@"" selectedImage:@"" title:@"易闻"];
     
 //    ZZIntelligentRetrievalVC *intelligentVC = [ZZIntelligentRetrievalVC new];
 //    [self addChildViewController:intelligentVC image:@"tabbar-8" selectedImage:@"tabbar-7" title:@"AI智能检索"];
     
     ZZRecommendedColumnVC *recommendedVC = [ZZRecommendedColumnVC new];
-    [self addChildViewController:recommendedVC image:@"tabbar-10" selectedImage:@"tabbar-9" title:@"推荐栏目"];
+    [self addChildViewController:recommendedVC image:@"tabbar-10" selectedImage:@"tabbar-9" title:@"我的栏目"];
     
     ZZMineVC *intelligentVC = [ZZMineVC new];
     [self addChildViewController:intelligentVC image:@"tabbar-8" selectedImage:@"tabbar-7" title:@"我的"];
@@ -101,7 +101,7 @@
     
     childController.title = title;
 
-    childController.view.backgroundColor = kColor(255, 255, 255);
+  //  childController.view.backgroundColor = kColor(255, 255, 255);
     
     childController.tabBarItem.image = [[UIImage imageNamed:imageName] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     childController.tabBarItem.selectedImage = [[UIImage imageNamed:selectedImageName] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];

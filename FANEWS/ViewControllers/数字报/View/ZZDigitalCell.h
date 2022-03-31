@@ -11,6 +11,10 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ZZDigitalCell : UICollectionViewCell
+@property (weak, nonatomic) IBOutlet UIImageView *newsImageView;
+@property (weak, nonatomic) IBOutlet UILabel *newsName;
+@property (weak, nonatomic) IBOutlet UIButton *collectionBT;
+
 
 @end
 

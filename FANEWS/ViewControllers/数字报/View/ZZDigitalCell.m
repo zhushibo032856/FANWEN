@@ -12,6 +12,8 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
+    
+    self.layer.cornerRadius = 5;
     // Initialization code
 }
 

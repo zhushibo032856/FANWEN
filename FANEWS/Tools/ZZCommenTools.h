@@ -39,6 +39,17 @@ NS_ASSUME_NONNULL_BEGIN
  @param subArray 需要改变字符串的数组
 */
 + (NSMutableAttributedString *)changeFontAndColor:(UIFont *)font Color:(UIColor *)color TotalString:(NSString *)totalString SubStringArray:(NSArray *)subArray;
+
+/**
+ 获取当前时间
+ */
++ (NSString *)getCurrentData;
+/**
+ 获取当前农历日期
+ */
+//农历转换函数
++(NSString*)getChineseCalendar;
+
 @end
 
 NS_ASSUME_NONNULL_END

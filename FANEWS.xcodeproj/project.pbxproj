@@ -18,6 +18,11 @@
 		760ABBF627F45F92005A461F /* ZZFirstSettingPasseordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 760ABBF427F45F92005A461F /* ZZFirstSettingPasseordVC.xib */; };
 		760ABBFA27F46489005A461F /* ZZKeyToLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 760ABBF827F46489005A461F /* ZZKeyToLoginVC.m */; };
 		760ABBFB27F46489005A461F /* ZZKeyToLoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 760ABBF927F46489005A461F /* ZZKeyToLoginVC.xib */; };
+		760ABBFE27F54B1D005A461F /* ZZRecommenNormalCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 760ABBFD27F54B1D005A461F /* ZZRecommenNormalCell.m */; };
+		760ABC0127F54B38005A461F /* ZZRecommenImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 760ABC0027F54B38005A461F /* ZZRecommenImageCell.m */; };
+		760ABC0427F593FE005A461F /* ZZDigitalNewspaperSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 760ABC0327F593FE005A461F /* ZZDigitalNewspaperSliderView.m */; };
+		760ABC0827F59A83005A461F /* XHPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 760ABC0627F59A83005A461F /* XHPageControl.m */; };
+		760ABC0B27F5AD4A005A461F /* ZZDigitalNewspaperDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 760ABC0A27F5AD4A005A461F /* ZZDigitalNewspaperDetailVC.m */; };
 		762AC5AE27E1BE8700380DF5 /* ZZLogoutPopVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 762AC5AC27E1BE8700380DF5 /* ZZLogoutPopVC.m */; };
 		762AC5AF27E1BE8700380DF5 /* ZZLogoutPopVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 762AC5AD27E1BE8700380DF5 /* ZZLogoutPopVC.xib */; };
 		762AC5B327E2D21B00380DF5 /* ZZPageControlBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 762AC5B227E2D21B00380DF5 /* ZZPageControlBaseView.m */; };
@@ -33,7 +38,6 @@
 		767E780527EABE2200665E60 /* ZZHomeSearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 767E780427EABE2200665E60 /* ZZHomeSearchView.m */; };
 		767E780827EC0C0400665E60 /* ZZPageButtonSelectBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 767E780727EC0C0400665E60 /* ZZPageButtonSelectBaseView.m */; };
 		767E780B27EC1A3B00665E60 /* ZZThematicNormalCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 767E780A27EC1A3B00665E60 /* ZZThematicNormalCell.m */; };
-		767E780E27EC1A5300665E60 /* ZZThematicImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 767E780D27EC1A5300665E60 /* ZZThematicImageCell.m */; };
 		769BE4F127E02C580015CB21 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 769BE4F027E02C580015CB21 /* AppDelegate.m */; };
 		769BE4FC27E02C5A0015CB21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 769BE4FB27E02C5A0015CB21 /* Assets.xcassets */; };
 		769BE4FF27E02C5A0015CB21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 769BE4FD27E02C5A0015CB21 /* LaunchScreen.storyboard */; };
@@ -129,6 +133,16 @@
 		760ABBF727F46489005A461F /* ZZKeyToLoginVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZKeyToLoginVC.h; sourceTree = "<group>"; };
 		760ABBF827F46489005A461F /* ZZKeyToLoginVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZKeyToLoginVC.m; sourceTree = "<group>"; };
 		760ABBF927F46489005A461F /* ZZKeyToLoginVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZZKeyToLoginVC.xib; sourceTree = "<group>"; };
+		760ABBFC27F54B1D005A461F /* ZZRecommenNormalCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZRecommenNormalCell.h; sourceTree = "<group>"; };
+		760ABBFD27F54B1D005A461F /* ZZRecommenNormalCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZRecommenNormalCell.m; sourceTree = "<group>"; };
+		760ABBFF27F54B38005A461F /* ZZRecommenImageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZRecommenImageCell.h; sourceTree = "<group>"; };
+		760ABC0027F54B38005A461F /* ZZRecommenImageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZRecommenImageCell.m; sourceTree = "<group>"; };
+		760ABC0227F593FE005A461F /* ZZDigitalNewspaperSliderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZDigitalNewspaperSliderView.h; sourceTree = "<group>"; };
+		760ABC0327F593FE005A461F /* ZZDigitalNewspaperSliderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZDigitalNewspaperSliderView.m; sourceTree = "<group>"; };
+		760ABC0627F59A83005A461F /* XHPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHPageControl.m; sourceTree = "<group>"; };
+		760ABC0727F59A83005A461F /* XHPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHPageControl.h; sourceTree = "<group>"; };
+		760ABC0927F5AD4A005A461F /* ZZDigitalNewspaperDetailVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZDigitalNewspaperDetailVC.h; sourceTree = "<group>"; };
+		760ABC0A27F5AD4A005A461F /* ZZDigitalNewspaperDetailVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZDigitalNewspaperDetailVC.m; sourceTree = "<group>"; };
 		762AC5AB27E1BE8700380DF5 /* ZZLogoutPopVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZLogoutPopVC.h; sourceTree = "<group>"; };
 		762AC5AC27E1BE8700380DF5 /* ZZLogoutPopVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZLogoutPopVC.m; sourceTree = "<group>"; };
 		762AC5AD27E1BE8700380DF5 /* ZZLogoutPopVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZZLogoutPopVC.xib; sourceTree = "<group>"; };
@@ -159,8 +173,6 @@
 		767E780727EC0C0400665E60 /* ZZPageButtonSelectBaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZPageButtonSelectBaseView.m; sourceTree = "<group>"; };
 		767E780927EC1A3B00665E60 /* ZZThematicNormalCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZThematicNormalCell.h; sourceTree = "<group>"; };
 		767E780A27EC1A3B00665E60 /* ZZThematicNormalCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZThematicNormalCell.m; sourceTree = "<group>"; };
-		767E780C27EC1A5300665E60 /* ZZThematicImageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZThematicImageCell.h; sourceTree = "<group>"; };
-		767E780D27EC1A5300665E60 /* ZZThematicImageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZThematicImageCell.m; sourceTree = "<group>"; };
 		769BE4EC27E02C580015CB21 /* FANEWS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FANEWS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		769BE4EF27E02C580015CB21 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		769BE4F027E02C580015CB21 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -306,6 +318,15 @@
 				E962F2D905AC1758F4BCA8B5 /* Pods-FANEWS.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		760ABC0527F59A83005A461F /* PageControl */ = {
+			isa = PBXGroup;
+			children = (
+				760ABC0727F59A83005A461F /* XHPageControl.h */,
+				760ABC0627F59A83005A461F /* XHPageControl.m */,
+			);
+			path = PageControl;
 			sourceTree = "<group>";
 		};
 		767E77ED27E8487A00665E60 /* OttoFPSButton */ = {
@@ -642,8 +663,6 @@
 			children = (
 				767E780927EC1A3B00665E60 /* ZZThematicNormalCell.h */,
 				767E780A27EC1A3B00665E60 /* ZZThematicNormalCell.m */,
-				767E780C27EC1A5300665E60 /* ZZThematicImageCell.h */,
-				767E780D27EC1A5300665E60 /* ZZThematicImageCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -676,6 +695,7 @@
 		769BE57F27E073880015CB21 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				760ABC0527F59A83005A461F /* PageControl */,
 				760ABBDD27F40116005A461F /* ZZDigitalCell.h */,
 				760ABBDE27F40116005A461F /* ZZDigitalCell.m */,
 				760ABBDF27F40116005A461F /* ZZDigitalCell.xib */,
@@ -688,6 +708,10 @@
 			children = (
 				769BE59A27E07D840015CB21 /* ZZDigitalNewspaperVC.h */,
 				769BE59B27E07D840015CB21 /* ZZDigitalNewspaperVC.m */,
+				760ABC0227F593FE005A461F /* ZZDigitalNewspaperSliderView.h */,
+				760ABC0327F593FE005A461F /* ZZDigitalNewspaperSliderView.m */,
+				760ABC0927F5AD4A005A461F /* ZZDigitalNewspaperDetailVC.h */,
+				760ABC0A27F5AD4A005A461F /* ZZDigitalNewspaperDetailVC.m */,
 				760ABBEF27F436AD005A461F /* ZZDigitalDetailVC.h */,
 				760ABBF027F436AD005A461F /* ZZDigitalDetailVC.m */,
 			);
@@ -774,6 +798,10 @@
 				76CBC39F27E30A9B00A1FAF1 /* ZZEditCollectionViewCell.h */,
 				76CBC3A027E30A9B00A1FAF1 /* ZZEditCollectionViewCell.m */,
 				76CBC3A127E30A9B00A1FAF1 /* ZZEditCollectionViewCell.xib */,
+				760ABBFC27F54B1D005A461F /* ZZRecommenNormalCell.h */,
+				760ABBFD27F54B1D005A461F /* ZZRecommenNormalCell.m */,
+				760ABBFF27F54B38005A461F /* ZZRecommenImageCell.h */,
+				760ABC0027F54B38005A461F /* ZZRecommenImageCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1042,6 +1070,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				769BE55527E040710015CB21 /* ZZBPPopViewController.m in Sources */,
+				760ABBFE27F54B1D005A461F /* ZZRecommenNormalCell.m in Sources */,
 				769BE54927E03F150015CB21 /* WebViewJavascriptBridge_JS.m in Sources */,
 				769BE54E27E03F700015CB21 /* MBProgressHUD+JDLHUD.m in Sources */,
 				760ABBE427F425A8005A461F /* ZZWelcomeVC.m in Sources */,
@@ -1061,7 +1090,6 @@
 				76CBC3A627E3252E00A1FAF1 /* ZZMessageCenterVC.m in Sources */,
 				769BE56727E06C6F0015CB21 /* ZZCommenTools.m in Sources */,
 				769BE5AC27E0899D0015CB21 /* ZZLoginVC.m in Sources */,
-				767E780E27EC1A5300665E60 /* ZZThematicImageCell.m in Sources */,
 				767E77FC27E869AD00665E60 /* ZZBaseWebView.m in Sources */,
 				76CBC39E27E2FFE500A1FAF1 /* ZZTitleEditVC.m in Sources */,
 				769BE55E27E060FC0015CB21 /* ZZBaseTabBar.m in Sources */,
@@ -1071,6 +1099,7 @@
 				767E780827EC0C0400665E60 /* ZZPageButtonSelectBaseView.m in Sources */,
 				769BE5C027E18DAD0015CB21 /* ZZMineCell.m in Sources */,
 				760ABB1427F18DE7005A461F /* ZZAINormalCell.m in Sources */,
+				760ABC0427F593FE005A461F /* ZZDigitalNewspaperSliderView.m in Sources */,
 				767E780B27EC1A3B00665E60 /* ZZThematicNormalCell.m in Sources */,
 				769BE54727E03F150015CB21 /* WebViewJavascriptBridgeBase.m in Sources */,
 				7675684227EC72F50024BF7F /* ZZAISearchResultVC.m in Sources */,
@@ -1092,6 +1121,7 @@
 				7675684527EC81050024BF7F /* ZZ text.m in Sources */,
 				769BE5B127E089B30015CB21 /* ZZRegisterVC.m in Sources */,
 				769BE5A527E07DDE0015CB21 /* ZZRecommendedColumnVC.m in Sources */,
+				760ABC0827F59A83005A461F /* XHPageControl.m in Sources */,
 				769BE56127E062820015CB21 /* ZZBaseTabBarController.m in Sources */,
 				762AC5B327E2D21B00380DF5 /* ZZPageControlBaseView.m in Sources */,
 				769BE56A27E06E8E0015CB21 /* ZZNSTimerManager.m in Sources */,
@@ -1099,8 +1129,10 @@
 				760ABBF527F45F92005A461F /* ZZFirstSettingPasseordVC.m in Sources */,
 				769BE59627E079310015CB21 /* ZZBaseTableView.m in Sources */,
 				767E77F627E84FA800665E60 /* ZZCycleScrollview.m in Sources */,
+				760ABC0B27F5AD4A005A461F /* ZZDigitalNewspaperDetailVC.m in Sources */,
 				769BE54827E03F150015CB21 /* WKWebViewJavascriptBridge.m in Sources */,
 				767E780527EABE2200665E60 /* ZZHomeSearchView.m in Sources */,
+				760ABC0127F54B38005A461F /* ZZRecommenImageCell.m in Sources */,
 				769BE56D27E06F7E0015CB21 /* ZZNetWorkManager.m in Sources */,
 				767E77F327E84DD900665E60 /* ZZPageControl.m in Sources */,
 			);

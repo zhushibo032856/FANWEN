@@ -117,7 +117,7 @@
 }
 //手机登录
 - (IBAction)phoneLoginBtAction:(UIButton *)sender {
-    ZZKeyToLoginVC *vc = [ZZKeyToLoginVC new];
+    ZZPhoneLoginVC *vc = [ZZPhoneLoginVC new];
     
     vc.modalPresentationStyle = UIModalPresentationFullScreen;
     [self presentViewController:vc animated:YES completion:nil];

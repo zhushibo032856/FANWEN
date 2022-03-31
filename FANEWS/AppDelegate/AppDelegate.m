@@ -90,7 +90,7 @@
             [self.window makeKeyAndVisible];
         };
     }else{
-        [self showLoginView];
+        [self showTabbarView];
     }
     
 }

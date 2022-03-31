@@ -37,7 +37,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = kColor(60, 60, 67);
-    self.view.alpha = 0.8;
+    self.view.alpha = 0.9;
 
     
     [self.view addSubview:self.backView];

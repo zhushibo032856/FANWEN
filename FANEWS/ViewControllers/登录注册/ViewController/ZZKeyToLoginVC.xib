@@ -89,7 +89,7 @@
                         <action selector="selectBtAction:" destination="-1" eventType="touchUpInside" id="7u3-Fi-DiP"/>
                     </connections>
                 </button>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="901-O8-c9s">
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="901-O8-c9s">
                     <rect key="frame" x="85" y="375" width="269" height="40"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>

@@ -9,7 +9,7 @@
 #import "ZZThematicAnalysisVC.h"
 #import "ZZThematicNormalCell.h"
 #import "ZZTextModel.h"
-#import "ZZThematicImageCell.h"
+
 @interface ZZThematicAnalysisVC ()<UITableViewDelegate,UITableViewDataSource,ZZCycleScrollViewDegelate>
 
 @property (nonatomic, strong) ZZBaseTableView *myTableView;
@@ -44,14 +44,6 @@
         text = [text stringByAppendingString:@"越来越多"];
         ZZTextModel *model = [[ZZTextModel alloc] init];
         model.text = text;
-        if (i % 2 == 0) {
-            model.isDouble = YES;
-            model.cellHeight = 145;
-        }else{
-            model.isDouble = NO;
-            // 计算高度，赋值给model
-            model.cellHeight = [ZZThematicNormalCell heightWithModel:model];
-        }
     //    model.cellHeight = 145;
         [self.dataArr addObject:model];
     }
@@ -72,12 +64,7 @@
 }
 
 - (void)navigationRIghtEvent:(UIButton *)sender{
-//    ZZLoginVC *loginVC = [ZZLoginVC new];
-//  //  [self.navigationController pushViewController:loginVC animated:YES];
-//    loginVC.modalPresentationStyle = UIModalPresentationFullScreen;
-//    [self presentViewController:loginVC animated:YES completion:nil];
-    
-    [ZZCommenTools toolPresentLoginVCFrom:self];
+
 }
 
 - (ZZBaseTableView *)myTableView{
@@ -88,15 +75,13 @@
         _myTableView.backgroundColor = [UIColor whiteColor];
         [_myTableView registerClass:[ZZThematicNormalCell class] forCellReuseIdentifier:@"ZZThematicNormalCell"];
         
-        [_myTableView registerClass:[ZZThematicImageCell class] forCellReuseIdentifier:@"ZZThematicImageCell"];
     }
     return _myTableView;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    ZZTextModel *model = self.dataArr[indexPath.row];
  
-    return model.cellHeight;
+    return 130;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -107,17 +92,10 @@
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     ZZTextModel *model = self.dataArr[indexPath.row];
-    if (model.isDouble == YES) {
-        ZZThematicImageCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ZZThematicImageCell" forIndexPath:indexPath];
+    ZZThematicNormalCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ZZThematicNormalCell" forIndexPath:indexPath];
 
-        [cell initCellWith:model];
-        return cell;
-    }else{
-        ZZThematicNormalCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ZZThematicNormalCell" forIndexPath:indexPath];
-
-        [cell initCellWith:model];
-        return cell;
-    }
+    [cell initCellWith:model];
+    return cell;
     
 }
 
