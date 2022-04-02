@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>list</key>
+		<array>
+			<string>智能检索</string>
+			<string>媒体热点</string>
+			<string>杭州新闻</string>
+			<string>我的快递</string>
+			<string>我的客服</string>
+			<string>服务窗</string>
+			<string>城市服务</string>
+			<string>生活缴费</string>
+			<string>信用卡还款</string>
+			<string>手机充值</string>
+		</array>
+		<key>title</key>
+		<string>系统应用</string>
+	</dict>
+	<dict>
+		<key>list</key>
+		<array>
+			<string>定制一</string>
+			<string>定制二</string>
+			<string>定制三</string>
+			<string>定制四</string>
+			<string>定制五</string>
+			<string>定制六</string>
+			<string>定制七</string>
+		</array>
+		<key>title</key>
+		<string>我的栏目</string>
+	</dict>
+</array>
+</plist>

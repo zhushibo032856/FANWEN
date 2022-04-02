@@ -30,6 +30,9 @@
 #import <KVOController/KVOController.h>
 #import "WXApi.h"
 #import "FANEWS-Bridging-Header.h"
+#import <JXPagingView/JXPagerView.h>
+#import <JXCategoryView.h>
+
 /// .h头文件
 #import "ApiHeader.h"
 #import "CommenHeader.h"
@@ -65,5 +68,6 @@
 #import "ZZMineVC.h"
 #import "ZZLoginVC.h"
 #import "ZZRegisterVC.h"
+
 
 #endif /* FileHeader_h */

@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
-
+typedef void(^settingDidBlock)(NSInteger index);
 @interface ZZDitigalSettingPopVC : UIViewController
 
 @end

@@ -26,9 +26,28 @@
     self.title = @"我的";
     
     [self.view addSubview:self.mineTableView];
+    [self setRightBt];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(logout) name:@"LOGOUT" object:nil];
 }
+
+- (void)setRightBt{
+    UIView *rightView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 30, 30)];
+    
+    UIButton * rightBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    rightBtn.frame = CGRectMake(5, 5, 24, 24);
+    [rightBtn setImage:[UIImage imageNamed:@"Thematic-1"] forState:UIControlStateNormal];
+    [rightBtn addTarget:self action:@selector(navigationRIghtEvent:) forControlEvents:UIControlEventTouchUpInside];
+    [rightView addSubview:rightBtn];
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:rightView];
+    
+}
+
+- (void)navigationRIghtEvent:(UIButton *)sender{
+
+}
+
 #pragma mark 懒加载
 - (UITableView *)mineTableView{
     if (!_mineTableView) {
@@ -95,20 +114,20 @@
 }
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
     
-    UIView *footerView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, 65)];
-    
-    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    button.frame = CGRectMake(0, 15, kScreenWidth, 50);
-    [button setBackgroundColor:[UIColor whiteColor]];
-    [button setTitle:@"退出登录" forState:UIControlStateNormal];
-    [button addTarget:self action:@selector(logOutBtAction:) forControlEvents:UIControlEventTouchUpInside];
-    [button setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
-    button.titleLabel.font = [UIFont systemFontOfSize:15];
-    [footerView addSubview:button];
-    return footerView;
+//    UIView *footerView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, 65)];
+//
+//    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+//    button.frame = CGRectMake(0, 15, kScreenWidth, 50);
+//    [button setBackgroundColor:[UIColor whiteColor]];
+//    [button setTitle:@"退出登录" forState:UIControlStateNormal];
+//    [button addTarget:self action:@selector(logOutBtAction:) forControlEvents:UIControlEventTouchUpInside];
+//    [button setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+//    button.titleLabel.font = [UIFont systemFontOfSize:15];
+//    [footerView addSubview:button];
+    return [UIView new];
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
-    return 50;
+    return 0;
 }
 
 #pragma mark 退出登录

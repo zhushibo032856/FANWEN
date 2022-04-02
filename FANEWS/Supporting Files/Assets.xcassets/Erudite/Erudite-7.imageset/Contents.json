@@ -1,14 +1,17 @@
 {
   "images" : [
     {
+      "filename" : "头条背景.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "头条背景@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "头条背景@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

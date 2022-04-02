@@ -8,6 +8,7 @@
 
 #import "ZZDitigalSettingPopVC.h"
 #import "ZZPopSettingCell.h"
+#import "ZZSetFontPopVC.h"
 
 @interface ZZDitigalSettingPopVC ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 @property (weak, nonatomic) IBOutlet UIView *backView;
@@ -67,7 +68,44 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     
-    
+    switch (indexPath.item) {
+        case 0://微信
+        
+            break;
+        case 1://朋友圈
+            
+            break;
+        case 2://QQ
+            
+            break;
+        case 3://QQ空间
+            
+            break;
+        case 4://钉钉
+            
+            break;
+        case 5://收藏
+            
+            break;
+        case 6://字号
+        {
+            [self dismissViewControllerAnimated:YES completion:nil];
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"SETTINGDISMISS" object:nil];
+        }
+            break;
+        case 7://投诉建议
+            
+            break;
+        case 8://刷新
+            
+            break;
+        case 9://复制链接
+            
+            break;
+            
+        default:
+            break;
+    }
 }
 
 - (IBAction)cancelAction:(UIButton *)sender {

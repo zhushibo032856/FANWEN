@@ -85,6 +85,9 @@
 // 页面加载完成之后调用
 - (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation {
     NSLog(@"finish----------");
+//    [webView evaluateJavaScript:@"document.getElementsByTagName('body')[0].style.webkitTextSizeAdjust= '200%'" completionHandler:^(id _Nullable result, NSError * _Nullable error) {
+//
+//        }];
 }
 
 //提交发生错误时调用

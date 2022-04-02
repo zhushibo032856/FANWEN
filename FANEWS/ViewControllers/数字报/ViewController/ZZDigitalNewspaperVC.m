@@ -125,6 +125,7 @@
 
     ZZDigitalCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"ZZDigitalCell" forIndexPath:indexPath];
 
+    [cell.newsImageView sd_setImageWithURL:[NSURL URLWithString:@"http://www.kfzimg.com/sw/kfzimg/946/a7d1640ef02f455d_b.jpg"]];
     cell.collectionBT.tag = 5000 + indexPath.item;
     [cell.collectionBT addTarget:self action:@selector(collectionBtAction:) forControlEvents:UIControlEventTouchUpInside];
     return cell;

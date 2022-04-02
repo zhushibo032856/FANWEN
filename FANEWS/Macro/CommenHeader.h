@@ -87,4 +87,7 @@
 #define kAppBuild [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"]
 /** NSNotification*/
 
+#define KCellBeganEditing  @"notification_CellBeganEditing"
+#define KCellStateChange   @"notification_CellStateChange"
+
 #endif /* CommenHeader_h */

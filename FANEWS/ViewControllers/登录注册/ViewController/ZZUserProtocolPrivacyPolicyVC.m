@@ -22,10 +22,11 @@
     }else{
         self.title = @"隐私政策";
     }
-    
     self.webview = [[ZZBaseWebView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight)];
     self.webview.htmlString = self.urlStr;
     [self.view addSubview:self.webview];
+    
+    
 }
 
 

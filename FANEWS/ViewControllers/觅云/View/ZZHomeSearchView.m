@@ -8,10 +8,10 @@
 
 #import "ZZHomeSearchView.h"
 
-@interface ZZHomeSearchView ()
+@interface ZZHomeSearchView ()<UITextFieldDelegate>
 
 @property (nonatomic, strong) UIView *backView;
-@property (nonatomic, strong) UIImageView *titleImageView;
+@property (nonatomic, strong) UIImageView *backImageView;
 @property (nonatomic, strong) UIView *searchView;
 @property (nonatomic, strong) UIImageView *searchImageView;
 @property (nonatomic, strong) UITextField *searchTF;
@@ -43,58 +43,48 @@
    // [self.backView.layer addSublayer:gradientLayer];
     [self.backView.layer insertSublayer:gradientLayer atIndex:0];
     
-    self.titleImageView = [[UIImageView alloc]init];
-    [self.backView addSubview:self.titleImageView];
-    self.titleImageView.image = [UIImage imageNamed:@"Erudite-1"];
-    [self.titleImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(self.backView).offset(80);
-        make.centerX.mas_equalTo(self.backView);
-        make.height.width.mas_equalTo(180);
+    self.backImageView = [[UIImageView alloc]init];
+    [self.backView addSubview:self.backImageView];
+    self.backImageView.userInteractionEnabled = YES;
+    self.backImageView.image = [UIImage imageNamed:@"Erudite-4"];
+    [self.backImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(self.backView).offset(120);
+        make.left.mas_equalTo(self.backView).offset(15);
+        make.right.mas_equalTo(self.backView).offset(-15);
+        make.height.mas_equalTo(110);
     }];
     
     
     self.searchView = [[UIView alloc]init];
-    self.searchView.layer.cornerRadius = 23;
-    self.searchView.layer.borderWidth = 1;
-    self.searchView.layer.borderColor = kColor(86, 141, 229).CGColor;
-    [self.backView addSubview:self.searchView];
+    self.searchView.backgroundColor = [UIColor whiteColor];
+    self.searchView.layer.cornerRadius = 5;
+    [self.backImageView addSubview:self.searchView];
     [self.searchView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerX.mas_equalTo(self.backView);
-        make.top.mas_equalTo(self.titleImageView.mas_bottom).offset(10);
+        make.bottom.mas_equalTo(self.backImageView.mas_bottom).offset(-15);
         make.left.mas_equalTo(20);
         make.right.mas_equalTo(-20);
-        make.height.mas_equalTo(46);
-    }];
-    
-    self.searchImageView = [[UIImageView alloc]init];
-    [self.searchView addSubview:self.searchImageView];
-    self.searchImageView.image = [UIImage imageNamed:@"Erudite-3"];
-    [self.searchImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(self.searchView).offset(10);
-        make.centerY.mas_equalTo(self.searchView);
-        make.height.width.mas_equalTo(24);
+        make.height.mas_equalTo(44);
     }];
     
     self.searchBT = [UIButton buttonWithType:UIButtonTypeCustom];
-    [self.searchBT setTitle:@"智能检索" forState:UIControlStateNormal];
-    [self.searchBT setBackgroundColor:kColor(86, 141, 229)];
-    [ZZCommenTools drawTopCornerions:23 with:self.searchBT with:1];
+    [self.searchBT setImage:[UIImage imageNamed:@"Erudite-3"] forState:UIControlStateNormal];
     [self.searchView addSubview:self.searchBT];
     [self.searchBT addTarget:self action:@selector(searchBtAction:) forControlEvents:UIControlEventTouchUpInside];
     [self.searchBT mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.mas_equalTo(self.searchView);
-        make.height.mas_equalTo(46);
-        make.width.mas_equalTo(108);
-        make.right.mas_equalTo(self.searchView);
+        make.height.width.mas_equalTo(24);
+        make.right.mas_equalTo(self.searchView).offset(-14);
     }];
     
     self.searchTF = [[UITextField alloc]init];
-    self.searchTF.placeholder = @"请输入搜索词";
+    self.searchTF.delegate = self;
+    self.searchTF.placeholder = @"请输入关键词搜索";
+    self.searchTF.returnKeyType = UIReturnKeySearch;
     [self.searchView addSubview:self.searchTF];
     [self.searchTF mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(self.searchImageView.mas_right).offset(10);
+        make.left.mas_equalTo(self.searchView).offset(10);
         make.centerY.mas_equalTo(self.searchView);
-        make.height.mas_equalTo(46);
+        make.height.mas_equalTo(44);
         make.right.mas_equalTo(self.searchBT.mas_left);
     }];
     
@@ -107,6 +97,13 @@
     if ([self.delegate respondsToSelector:@selector(searchToNextVcWith:)]) {
         [self.delegate searchToNextVcWith:self.searchTF.text];
     }
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField{
+    if ([self.delegate respondsToSelector:@selector(searchToNextVcWith:)]) {
+        [self.delegate searchToNextVcWith:self.searchTF.text];
+    }
+    return YES;
 }
 
 @end

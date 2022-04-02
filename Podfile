@@ -15,4 +15,7 @@ pod 'Charts'
 pod 'KVOController'
 pod 'WechatOpenSDK'
 
+pod 'JXPagingView/Pager'
+pod 'JXCategoryView'
+
 end
