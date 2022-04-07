@@ -102,6 +102,15 @@
 		76B873C427F8218900D0CF28 /* ZZEditCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76B873C227F8218900D0CF28 /* ZZEditCell.xib */; };
 		76B873C627F82FCD00D0CF28 /* TitleList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 76B873C527F82FCD00D0CF28 /* TitleList.plist */; };
 		76B873C927F82FEB00D0CF28 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B873C727F82FEB00D0CF28 /* DataManager.m */; };
+		76B873E827F8602A00D0CF28 /* ZZEditInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B873E727F8602A00D0CF28 /* ZZEditInfoVC.m */; };
+		76B873EB27FD2CB000D0CF28 /* ZZEditInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B873EA27FD2CB000D0CF28 /* ZZEditInfoCell.m */; };
+		76B873EF27FD618000D0CF28 /* ZZGenderSelectPickerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B873ED27FD618000D0CF28 /* ZZGenderSelectPickerVC.m */; };
+		76B873F027FD618000D0CF28 /* ZZGenderSelectPickerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76B873EE27FD618000D0CF28 /* ZZGenderSelectPickerVC.xib */; };
+		76B873F427FD670E00D0CF28 /* ZZDateSelectPickerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B873F227FD670E00D0CF28 /* ZZDateSelectPickerVC.m */; };
+		76B873F527FD670E00D0CF28 /* ZZDateSelectPickerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76B873F327FD670E00D0CF28 /* ZZDateSelectPickerVC.xib */; };
+		76B873F927FD672800D0CF28 /* ZZAreaSelectPickerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B873F727FD672800D0CF28 /* ZZAreaSelectPickerVC.m */; };
+		76B873FA27FD672800D0CF28 /* ZZAreaSelectPickerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76B873F827FD672800D0CF28 /* ZZAreaSelectPickerVC.xib */; };
+		76B873FE27FD708200D0CF28 /* area.plist in Resources */ = {isa = PBXBuildFile; fileRef = 76B873FD27FD708200D0CF28 /* area.plist */; };
 		76CBC39E27E2FFE500A1FAF1 /* ZZTitleEditVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 76CBC39D27E2FFE500A1FAF1 /* ZZTitleEditVC.m */; };
 		76CBC3A227E30A9B00A1FAF1 /* ZZEditCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76CBC3A027E30A9B00A1FAF1 /* ZZEditCollectionViewCell.m */; };
 		76CBC3A327E30A9B00A1FAF1 /* ZZEditCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76CBC3A127E30A9B00A1FAF1 /* ZZEditCollectionViewCell.xib */; };
@@ -313,6 +322,20 @@
 		76B873C527F82FCD00D0CF28 /* TitleList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TitleList.plist; sourceTree = "<group>"; };
 		76B873C727F82FEB00D0CF28 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
 		76B873C827F82FEB00D0CF28 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		76B873E627F8602A00D0CF28 /* ZZEditInfoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZEditInfoVC.h; sourceTree = "<group>"; };
+		76B873E727F8602A00D0CF28 /* ZZEditInfoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZEditInfoVC.m; sourceTree = "<group>"; };
+		76B873E927FD2CB000D0CF28 /* ZZEditInfoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZEditInfoCell.h; sourceTree = "<group>"; };
+		76B873EA27FD2CB000D0CF28 /* ZZEditInfoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZEditInfoCell.m; sourceTree = "<group>"; };
+		76B873EC27FD618000D0CF28 /* ZZGenderSelectPickerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZGenderSelectPickerVC.h; sourceTree = "<group>"; };
+		76B873ED27FD618000D0CF28 /* ZZGenderSelectPickerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZGenderSelectPickerVC.m; sourceTree = "<group>"; };
+		76B873EE27FD618000D0CF28 /* ZZGenderSelectPickerVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZZGenderSelectPickerVC.xib; sourceTree = "<group>"; };
+		76B873F127FD670E00D0CF28 /* ZZDateSelectPickerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZDateSelectPickerVC.h; sourceTree = "<group>"; };
+		76B873F227FD670E00D0CF28 /* ZZDateSelectPickerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZDateSelectPickerVC.m; sourceTree = "<group>"; };
+		76B873F327FD670E00D0CF28 /* ZZDateSelectPickerVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZZDateSelectPickerVC.xib; sourceTree = "<group>"; };
+		76B873F627FD672800D0CF28 /* ZZAreaSelectPickerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZAreaSelectPickerVC.h; sourceTree = "<group>"; };
+		76B873F727FD672800D0CF28 /* ZZAreaSelectPickerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZAreaSelectPickerVC.m; sourceTree = "<group>"; };
+		76B873F827FD672800D0CF28 /* ZZAreaSelectPickerVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZZAreaSelectPickerVC.xib; sourceTree = "<group>"; };
+		76B873FD27FD708200D0CF28 /* area.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = area.plist; sourceTree = "<group>"; };
 		76CBC39C27E2FFE500A1FAF1 /* ZZTitleEditVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZTitleEditVC.h; sourceTree = "<group>"; };
 		76CBC39D27E2FFE500A1FAF1 /* ZZTitleEditVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZTitleEditVC.m; sourceTree = "<group>"; };
 		76CBC39F27E30A9B00A1FAF1 /* ZZEditCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZEditCollectionViewCell.h; sourceTree = "<group>"; };
@@ -1042,6 +1065,8 @@
 		76B873D227F85F1000D0CF28 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				76B873E927FD2CB000D0CF28 /* ZZEditInfoCell.h */,
+				76B873EA27FD2CB000D0CF28 /* ZZEditInfoCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1049,6 +1074,18 @@
 		76B873D327F85F1000D0CF28 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				76B873E627F8602A00D0CF28 /* ZZEditInfoVC.h */,
+				76B873E727F8602A00D0CF28 /* ZZEditInfoVC.m */,
+				76B873EC27FD618000D0CF28 /* ZZGenderSelectPickerVC.h */,
+				76B873ED27FD618000D0CF28 /* ZZGenderSelectPickerVC.m */,
+				76B873EE27FD618000D0CF28 /* ZZGenderSelectPickerVC.xib */,
+				76B873F127FD670E00D0CF28 /* ZZDateSelectPickerVC.h */,
+				76B873F227FD670E00D0CF28 /* ZZDateSelectPickerVC.m */,
+				76B873F327FD670E00D0CF28 /* ZZDateSelectPickerVC.xib */,
+				76B873F627FD672800D0CF28 /* ZZAreaSelectPickerVC.h */,
+				76B873F727FD672800D0CF28 /* ZZAreaSelectPickerVC.m */,
+				76B873F827FD672800D0CF28 /* ZZAreaSelectPickerVC.xib */,
+				76B873FD27FD708200D0CF28 /* area.plist */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1312,7 +1349,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				769BE5B227E089B30015CB21 /* ZZRegisterVC.xib in Resources */,
+				76B873FE27FD708200D0CF28 /* area.plist in Resources */,
 				76B873C427F8218900D0CF28 /* ZZEditCell.xib in Resources */,
+				76B873F527FD670E00D0CF28 /* ZZDateSelectPickerVC.xib in Resources */,
 				769BE5B727E089E80015CB21 /* ZZPhoneLoginVC.xib in Resources */,
 				769BE5AD27E0899D0015CB21 /* ZZLoginVC.xib in Resources */,
 				76CBC3A327E30A9B00A1FAF1 /* ZZEditCollectionViewCell.xib in Resources */,
@@ -1320,8 +1359,10 @@
 				769BE5BC27E08A020015CB21 /* ZZPhoneCodeVC.xib in Resources */,
 				76B873C627F82FCD00D0CF28 /* TitleList.plist in Resources */,
 				760ABBFB27F46489005A461F /* ZZKeyToLoginVC.xib in Resources */,
+				76B873F027FD618000D0CF28 /* ZZGenderSelectPickerVC.xib in Resources */,
 				760ABC1F27F6A359005A461F /* ZZSetFontPopVC.xib in Resources */,
 				769BE5C127E18DAD0015CB21 /* ZZMineCell.xib in Resources */,
+				76B873FA27FD672800D0CF28 /* ZZAreaSelectPickerVC.xib in Resources */,
 				769BE4FF27E02C5A0015CB21 /* LaunchScreen.storyboard in Resources */,
 				769BE5C627E1A48B0015CB21 /* ZZMineHeadView.xib in Resources */,
 				769BE4FC27E02C5A0015CB21 /* Assets.xcassets in Resources */,
@@ -1414,6 +1455,7 @@
 				760ABC3D27F7E9E7005A461F /* ZZMediaHotCell.m in Sources */,
 				76CBC3BC27E4781D00A1FAF1 /* ZZInfoModel.m in Sources */,
 				76CBC3AF27E3268E00A1FAF1 /* ZZPopularActivitiesVC.m in Sources */,
+				76B873E827F8602A00D0CF28 /* ZZEditInfoVC.m in Sources */,
 				76B873BF27F81F8600D0CF28 /* ZZEditCollectionReusableViewFootView.m in Sources */,
 				769BE53127E03BB30015CB21 /* ZZBaseViewController.m in Sources */,
 				767E77F927E84FE700665E60 /* ZZCycleCollectionViewCell.m in Sources */,
@@ -1442,9 +1484,12 @@
 				767E780B27EC1A3B00665E60 /* ZZThematicNormalCell.m in Sources */,
 				769BE54727E03F150015CB21 /* WebViewJavascriptBridgeBase.m in Sources */,
 				7675684227EC72F50024BF7F /* ZZAISearchResultVC.m in Sources */,
+				76B873F927FD672800D0CF28 /* ZZAreaSelectPickerVC.m in Sources */,
 				769BE5A827E07E030015CB21 /* ZZMineVC.m in Sources */,
 				76CBC3B327E3405800A1FAF1 /* ZZMessageCenterCell.m in Sources */,
+				76B873EF27FD618000D0CF28 /* ZZGenderSelectPickerVC.m in Sources */,
 				760ABC2227F6A89F005A461F /* ZZCustomSlider.m in Sources */,
+				76B873EB27FD2CB000D0CF28 /* ZZEditInfoCell.m in Sources */,
 				762AC5AE27E1BE8700380DF5 /* ZZLogoutPopVC.m in Sources */,
 				769BE57027E070EE0015CB21 /* ZZApiManager.m in Sources */,
 				769BE5A227E07DC30015CB21 /* ZZIntelligentRetrievalVC.m in Sources */,
@@ -1455,6 +1500,7 @@
 				767E77EC27E842EF00665E60 /* ZZTextModel.m in Sources */,
 				7675683F27EC62EB0024BF7F /* ZZUserProtocolPrivacyPolicyVC.m in Sources */,
 				769BE5C427E1A46C0015CB21 /* ZZMineHeadView.m in Sources */,
+				76B873F427FD670E00D0CF28 /* ZZDateSelectPickerVC.m in Sources */,
 				760ABC3427F6F152005A461F /* ZZMediaHotVC.m in Sources */,
 				760ABBFA27F46489005A461F /* ZZKeyToLoginVC.m in Sources */,
 				769BE59F27E07DA80015CB21 /* ZZEruditeVC.m in Sources */,
@@ -1668,6 +1714,8 @@
 					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
 				);
 				INFOPLIST_FILE = FANEWS/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "是否允许此App使用你的相机？";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "是否允许此App使用你的相册？";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIStatusBarHidden = NO;
@@ -1720,6 +1768,8 @@
 					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
 				);
 				INFOPLIST_FILE = FANEWS/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "是否允许此App使用你的相机？";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "是否允许此App使用你的相册？";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIStatusBarHidden = NO;

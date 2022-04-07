@@ -11,6 +11,7 @@
 #import "ZZMineHeadView.h"
 #import "ZZLogoutPopVC.h"
 #import "ZZMessageCenterVC.h"
+#import "ZZEditInfoVC.h"
 
 @interface ZZMineVC ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -46,6 +47,7 @@
 
 - (void)navigationRIghtEvent:(UIButton *)sender{
 
+    
 }
 
 #pragma mark 懒加载
@@ -97,7 +99,6 @@
     ZZMineHeadView *headView = [ZZMineHeadView initMineHeadView];
     kWeakSelf
     headView.block = ^{
-        NSLog(@"点击");
         [weakSelf pushToInfoDetailVC];
     };
     [headView initViewWith];
@@ -106,7 +107,8 @@
 #pragma mark 跳转到个人详情页
 - (void)pushToInfoDetailVC{
 
-    
+    ZZEditInfoVC *vc = [ZZEditInfoVC new];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{

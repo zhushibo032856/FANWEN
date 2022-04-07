@@ -167,6 +167,7 @@
 
 - (void)pushToMineVC:(UITapGestureRecognizer *)tap{
     
+    self.tabBarController.selectedIndex = 4;
     
 }
 

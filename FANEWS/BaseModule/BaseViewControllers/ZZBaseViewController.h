@@ -22,7 +22,7 @@ typedef NS_ENUM(NSInteger, PushType) {
  导航栏左上角返回Item
  */
 - (void)setNavigationLeftReturnItem;
-
+- (void)navigationLeftEvent;
 
 @end
 

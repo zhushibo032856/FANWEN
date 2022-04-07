@@ -15,6 +15,7 @@
 #import <QuartzCore/QuartzCore.h>
 #import "AppDelegate.h"
 #import <UserNotifications/UserNotifications.h>
+#import <Photos/Photos.h>
 
 /// pod 文件
 #import <MBProgressHUD.h>
